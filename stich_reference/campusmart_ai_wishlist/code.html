@@ -1,0 +1,223 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","on-secondary-fixed-variant":"#574235","secondary-container":"#fcdcc9","secondary-fixed-dim":"#dfc1ae","secondary":"#715a4b","on-tertiary-container":"#3a4755","surface-bright":"#fbf9f6","on-error":"#ffffff","tertiary-container":"#a8b5c6","inverse-primary":"#bacbbb","primary":"#536255","primary-fixed-dim":"#bacbbb","surface-container-lowest":"#ffffff","error":"#ba1a1a","secondary-fixed":"#fcdcc9","surface-container-high":"#eae8e5","surface-container":"#efedeb","on-primary":"#ffffff","inverse-surface":"#30302f","tertiary":"#53606e","on-primary-fixed":"#101f14","error-container":"#ffdad6","tertiary-fixed-dim":"#bbc8d9","on-tertiary-fixed":"#101d29","outline-variant":"#c3c8c1","surface-tint":"#536255","surface":"#fbf9f6","background":"#fbf9f6","surface-container-low":"#f5f3f1","on-surface":"#1b1c1b","on-surface-variant":"#434843","on-primary-container":"#3a493d","inverse-on-surface":"#f2f0ee","primary-fixed":"#d6e7d6","surface-variant":"#e4e2e0","on-tertiary-fixed-variant":"#3b4856","surface-container-highest":"#e4e2e0","tertiary-fixed":"#d7e4f5","primary-container":"#a7b8a8","on-background":"#1b1c1b","on-tertiary":"#ffffff","surface-dim":"#dbdad7","outline":"#747873","on-secondary":"#ffffff","on-secondary-fixed":"#28180c","on-secondary-container":"#776051","on-primary-fixed-variant":"#3b4a3e"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"unit":"4px","gutter":"24px","md":"16px","xl":"48px","margin-mobile":"16px","margin-desktop":"40px","sm":"8px","container-max":"1280px","xxl":"80px","xs":"4px","lg":"24px"},"fontFamily":{"body-lg":["Inter"],"headline-lg":["Playfair Display"],"body-sm":["Inter"],"body-md":["Inter"],"headline-sm":["Playfair Display"],"display-lg":["Playfair Display"],"headline-md":["Playfair Display"],"button-text":["Inter"],"label-caps":["Inter"],"display-lg-mobile":["Playfair Display"]},"fontSize":{"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-lg":["40px",{"lineHeight":"48px","fontWeight":"600"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["24px",{"lineHeight":"32px","fontWeight":"500"}],"display-lg":["64px",{"lineHeight":"72px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["32px",{"lineHeight":"40px","fontWeight":"600"}],"button-text":["14px",{"lineHeight":"20px","fontWeight":"600"}],"label-caps":["12px",{"lineHeight":"16px","letterSpacing":"0.1em","fontWeight":"600"}],"display-lg-mobile":["40px",{"lineHeight":"48px","letterSpacing":"-0.01em","fontWeight":"700"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"></head><body class="bg-background font-body-md text-on-background"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><div class="h-16 max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-xl"><a class="font-headline-sm text-headline-sm text-primary tracking-tight" data-path="browse" href="#">CampusMart AI</a><nav class="hidden md:flex items-center gap-lg" data-active-classes="text-primary font-semibold"><a aria-current="page" class="transition-colors text-primary font-semibold" data-path="browse" href="#">Browse</a><a class="font-button-text text-button-text text-on-surface-variant hover:text-on-surface transition-colors" data-path="sell" href="#">Sell</a><a class="font-button-text text-button-text text-on-surface-variant hover:text-on-surface transition-colors" data-path="wishlist" href="#">Wishlist</a><a class="font-button-text text-button-text text-on-surface-variant hover:text-on-surface transition-colors" data-path="messages" href="#">Messages</a></nav></div><div class="flex items-center gap-md"><button class="p-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined">notifications</span></button><a class="w-8 h-8 rounded-full bg-primary flex items-center justify-center transition-transform hover:scale-105" data-path="profile" href="#"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></a></div></div></header><main class="w-full pt-16"><div class="flex flex-col w-full bg-background min-h-screen">
+<!-- Wishlist Header -->
+<header class="w-full max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop pt-xl pb-lg md:pb-xl flex flex-col md:flex-row md:items-end justify-between gap-md border-b border-outline-variant/30 relative">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-secondary/5 to-transparent pointer-events-none mix-blend-multiply opacity-50"></div>
+<div class="relative z-10 max-w-2xl">
+<span class="block font-label-caps text-label-caps text-primary tracking-widest mb-sm">SAVED FOR LATER</span>
+<h1 class="font-headline-lg text-headline-lg text-on-surface mb-xs md:mb-sm">My Wishlist</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">Keep the things you love close until you're ready to find them.</p>
+</div>
+<div class="relative z-10 flex items-center gap-sm mt-md md:mt-0">
+<span class="font-body-sm text-body-sm text-on-surface-variant/80">6 saved items</span>
+<button class="w-8 h-8 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px]">filter_list</span>
+</button>
+</div>
+</header>
+<!-- Wishlist Grid -->
+<section class="w-full max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop py-xl">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-lg">
+<!-- Item 1 -->
+<article class="group relative flex flex-col bg-surface border border-outline-variant/30 rounded-xl overflow-hidden hover:shadow-xl hover:border-primary/20 transition-all duration-300 ease-in-out cursor-pointer h-full">
+<div class="relative aspect-[4/5] w-full overflow-hidden bg-surface-container-high isolate">
+<img alt="Engineering Mathematics — 2nd Edition" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)]" loading="lazy" src="https://lh3.googleusercontent.com/aida/AEtjO1U48-qMqWWUFetSJT5Oom7Z-GqmlA4JI4DdCKghkn2_YnMhI7fzags5Q6PwZlqEMvyU8M9fB2e7JP5V58G0lOPI7mKsBk9_lKIFq_CczFCyAjfC_0ikG7g6Aai-pbctE_EoHbkCrNTpp7NDzh6NYKLmYLDGoWPEDtWm1lSv6xRPsc5z3cmqyOZuW4YHpZCZcmtIy5ngNan43sFfzlJOvWrD8I7027AvvP618rgz3vgQO4IAnuGrwb7s3H8">
+<div class="absolute top-sm right-sm z-20 flex flex-col gap-2">
+<button aria-label="Remove from Wishlist" class="w-8 h-8 bg-surface/90 backdrop-blur-md rounded-full flex items-center justify-center text-primary shadow-sm hover:scale-110 transition-transform active:scale-95">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="absolute top-sm left-sm z-20">
+<span class="inline-flex items-center gap-1 px-2 py-1 bg-surface/90 backdrop-blur-md rounded-full font-label-caps text-[10px] text-on-surface uppercase tracking-wider shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              Available
+            </span>
+</div>
+<!-- Gradient overlay for text contrast at bottom if needed, not heavily used in this design -->
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="flex flex-col flex-grow p-4 gap-2 bg-surface">
+<div class="flex items-start justify-between gap-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface line-clamp-2 leading-tight">Engineering Mathematics — 2nd Edition</h3>
+<span class="font-body-lg text-body-lg font-semibold text-primary whitespace-nowrap">₹450</span>
+</div>
+<div class="mt-auto pt-2 flex items-center gap-3 text-on-surface-variant font-body-sm text-body-sm opacity-80">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">cloud</span> Like New</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">location_on</span> VIT Vellore</span>
+</div>
+</div>
+</article>
+<!-- Item 2 -->
+<article class="group relative flex flex-col bg-surface border border-outline-variant/30 rounded-xl overflow-hidden hover:shadow-xl hover:border-primary/20 transition-all duration-300 ease-in-out cursor-pointer h-full">
+<div class="relative aspect-[4/5] w-full overflow-hidden bg-surface-container-high isolate">
+<img alt="Noise Cancelling Headphones" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)]" loading="lazy" src="https://lh3.googleusercontent.com/aida/AEtjO1XJ6jYMx1Wka6secq7Of4jV9nxY-0rb-XPyKYitt6CB2mLN2ICf-wGn1zh5hNlUvF7x-ZlVA8VCCzKKF0bHzvvDc5_W7NN89B7DKdliv9xfPbzBYQ4QOAqI8xSIIWWD5ykUrq1WC5UImvyZpH97LF8PA5o7hVTFHH8xilzTf0ntmUzbkcn9mfhooB5hi_8yXrxNavlt72IxUWkv_tAYakLqTusrC6zTAAzheZ4rVmONt0ONAC80XS8haRU">
+<div class="absolute top-sm right-sm z-20 flex flex-col gap-2">
+<button aria-label="Remove from Wishlist" class="w-8 h-8 bg-surface/90 backdrop-blur-md rounded-full flex items-center justify-center text-primary shadow-sm hover:scale-110 transition-transform active:scale-95">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="absolute top-sm left-sm z-20">
+<span class="inline-flex items-center gap-1 px-2 py-1 bg-surface/90 backdrop-blur-md rounded-full font-label-caps text-[10px] text-on-surface uppercase tracking-wider shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              Available
+            </span>
+</div>
+</div>
+<div class="flex flex-col flex-grow p-4 gap-2 bg-surface">
+<div class="flex items-start justify-between gap-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface line-clamp-2 leading-tight">Noise Cancelling Headphones</h3>
+<span class="font-body-lg text-body-lg font-semibold text-primary whitespace-nowrap">₹1,800</span>
+</div>
+<div class="mt-auto pt-2 flex items-center gap-3 text-on-surface-variant font-body-sm text-body-sm opacity-80">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">cloud</span> Like New</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">location_on</span> VIT Vellore</span>
+</div>
+</div>
+</article>
+<!-- Item 3 - Sold -->
+<article class="group relative flex flex-col bg-surface border border-outline-variant/30 rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 ease-in-out cursor-pointer h-full opacity-75 grayscale-[20%]">
+<div class="absolute inset-0 bg-surface/10 z-10 pointer-events-none"></div>
+<div class="relative aspect-[4/5] w-full overflow-hidden bg-surface-container-high isolate">
+<img alt="Scientific Calculator" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)]" loading="lazy" src="https://lh3.googleusercontent.com/aida/AEtjO1XCPFhGtcSxdiUpIiMZeol8yzFfruitA9H_oO_cl_grioRIwQ0pAaIqSxnEdlAKSyGPOI0eG8lPEXmXpnzEybg7ZFzBZ2Zfxx_ZFFnp9MigcQu_deCoUNWRPClcEOIofXSXFT5FicWPWCpnFT1z9-QO-frOsKEOdv0KMsRiUo_QbyAJYUiEOVxLc7_ojiL0oXX020rb863cP_P9Q0lk-OZf5mpjJSOyTfAILFcaiko6bnVd8AJ7wXSND3Y">
+<div class="absolute inset-0 bg-surface/40 backdrop-blur-[2px] z-10 flex items-center justify-center">
+<span class="px-4 py-2 bg-inverse-surface text-inverse-on-surface font-label-caps text-label-caps tracking-widest rounded-full shadow-lg">SOLD OUT</span>
+</div>
+<div class="absolute top-sm right-sm z-20 flex flex-col gap-2">
+<button aria-label="Remove from Wishlist" class="w-8 h-8 bg-surface/90 backdrop-blur-md rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary shadow-sm hover:scale-110 transition-transform active:scale-95">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col flex-grow p-4 gap-2 bg-surface">
+<div class="flex items-start justify-between gap-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface-variant line-clamp-2 leading-tight line-through decoration-outline-variant/50">Scientific Calculator</h3>
+<span class="font-body-lg text-body-lg font-semibold text-on-surface-variant whitespace-nowrap">₹650</span>
+</div>
+<div class="mt-auto pt-2 flex items-center justify-between">
+<p class="text-error/80 font-body-sm text-body-sm italic">This item has been sold.</p>
+</div>
+</div>
+</article>
+<!-- Item 4 -->
+<article class="group relative flex flex-col bg-surface border border-outline-variant/30 rounded-xl overflow-hidden hover:shadow-xl hover:border-primary/20 transition-all duration-300 ease-in-out cursor-pointer h-full">
+<div class="relative aspect-[4/5] w-full overflow-hidden bg-surface-container-high isolate">
+<img alt="Study Lamp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)]" loading="lazy" src="https://lh3.googleusercontent.com/aida/AEtjO1WSXGHGScX08kfnLfo4JUajTdmvoE6IDWzqb60fJQkhjNovf6mITcZSAfxXn1eGmjKV_v741AkDYB944f_x9kXsnNYPrhnc3zNUlELs5LjNfjCBZVtaFoBfw-JIsxVQ7GHLDj-5oRlAtdnqy5QvgJ_3QOuBGfGnaqadBAQhdU3_Z9jXqpl4bKXGlImHS36kmHFExWGhMR8A4Z5eX6bxM9slpN_swg8liQno5PS7ZnL-6pEE66sW5OnV22Q">
+<div class="absolute top-sm right-sm z-20 flex flex-col gap-2">
+<button aria-label="Remove from Wishlist" class="w-8 h-8 bg-surface/90 backdrop-blur-md rounded-full flex items-center justify-center text-primary shadow-sm hover:scale-110 transition-transform active:scale-95">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="absolute top-sm left-sm z-20">
+<span class="inline-flex items-center gap-1 px-2 py-1 bg-surface/90 backdrop-blur-md rounded-full font-label-caps text-[10px] text-on-surface uppercase tracking-wider shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              Available
+            </span>
+</div>
+</div>
+<div class="flex flex-col flex-grow p-4 gap-2 bg-surface">
+<div class="flex items-start justify-between gap-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface line-clamp-2 leading-tight">Study Lamp</h3>
+<span class="font-body-lg text-body-lg font-semibold text-primary whitespace-nowrap">₹500</span>
+</div>
+<div class="mt-auto pt-2 flex items-center gap-3 text-on-surface-variant font-body-sm text-body-sm opacity-80">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">cloud</span> Good</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">location_on</span> VIT Vellore</span>
+</div>
+</div>
+</article>
+<!-- Item 5 -->
+<article class="group relative flex flex-col bg-surface border border-outline-variant/30 rounded-xl overflow-hidden hover:shadow-xl hover:border-primary/20 transition-all duration-300 ease-in-out cursor-pointer h-full">
+<div class="relative aspect-[4/5] w-full overflow-hidden bg-surface-container-high isolate">
+<img alt="Data Structures Made Easy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)]" loading="lazy" src="https://lh3.googleusercontent.com/aida/AEtjO1X1FGr2L5LB7ZsOfLrjD_A_Eyp_EME7HJHFib91d3OKlK1hX7Nn2C5OFM_s6DaMKCjz4PUhrtr3K35mWc88BESNX7SCOLBjZ0t2THWtl1iXpEjmBq2W7OjHeZA3NcTNawU91NMXj5WTTzto3XzZSWipM5F3NVIu0oTmvg0oVNWj-zYVbpKkDRXBP4eReELt63mr4tYpZ8jnfI0zr3CryPnn3lpfE77uZ1Ag8Zkm2uudROgD8qsa5WQKSg">
+<div class="absolute top-sm right-sm z-20 flex flex-col gap-2">
+<button aria-label="Remove from Wishlist" class="w-8 h-8 bg-surface/90 backdrop-blur-md rounded-full flex items-center justify-center text-primary shadow-sm hover:scale-110 transition-transform active:scale-95">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="absolute top-sm left-sm z-20">
+<span class="inline-flex items-center gap-1 px-2 py-1 bg-surface/90 backdrop-blur-md rounded-full font-label-caps text-[10px] text-on-surface uppercase tracking-wider shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              Available
+            </span>
+</div>
+</div>
+<div class="flex flex-col flex-grow p-4 gap-2 bg-surface">
+<div class="flex items-start justify-between gap-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface line-clamp-2 leading-tight">Data Structures Made Easy</h3>
+<span class="font-body-lg text-body-lg font-semibold text-primary whitespace-nowrap">₹550</span>
+</div>
+<div class="mt-auto pt-2 flex items-center gap-3 text-on-surface-variant font-body-sm text-body-sm opacity-80">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">cloud</span> Like New</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">location_on</span> VIT Vellore</span>
+</div>
+</div>
+</article>
+<!-- Item 6 -->
+<article class="group relative flex flex-col bg-surface border border-outline-variant/30 rounded-xl overflow-hidden hover:shadow-xl hover:border-primary/20 transition-all duration-300 ease-in-out cursor-pointer h-full">
+<div class="relative aspect-[4/5] w-full overflow-hidden bg-surface-container-high isolate">
+<img alt="Campus Backpack" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)]" loading="lazy" src="https://lh3.googleusercontent.com/aida/AEtjO1WUsRgdgevcPilyDIcCII93_eBZ6WhDckWiO-TDbYeQMMj0_7F_wf6fhxM4RLTo29xYTj5RdEdwkbIyXqTX7xpjPIP6nC4cBkOhWGwYSFI7jAOKdH0OmJyC5MakjyAqGiEoxiqu9ZwHj6vL8NO1d9Si-62LcGwqbpfAzWmIQmUW4K-BkNbOHYYLoIPpHMUeXfG3zk0owCNSRkkod22r2rL7DAZdNQZYjOgUwTCN3y47hgPjkmv8K22bFfQ">
+<div class="absolute top-sm right-sm z-20 flex flex-col gap-2">
+<button aria-label="Remove from Wishlist" class="w-8 h-8 bg-surface/90 backdrop-blur-md rounded-full flex items-center justify-center text-primary shadow-sm hover:scale-110 transition-transform active:scale-95">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="absolute top-sm left-sm z-20">
+<span class="inline-flex items-center gap-1 px-2 py-1 bg-surface/90 backdrop-blur-md rounded-full font-label-caps text-[10px] text-on-surface uppercase tracking-wider shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              Available
+            </span>
+</div>
+</div>
+<div class="flex flex-col flex-grow p-4 gap-2 bg-surface">
+<div class="flex items-start justify-between gap-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface line-clamp-2 leading-tight">Campus Backpack</h3>
+<span class="font-body-lg text-body-lg font-semibold text-primary whitespace-nowrap">₹700</span>
+</div>
+<div class="mt-auto pt-2 flex items-center gap-3 text-on-surface-variant font-body-sm text-body-sm opacity-80">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">cloud</span> Good</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">location_on</span> VIT Vellore</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="w-full py-xxl bg-surface-container-low mt-xl border-t border-outline-variant/30">
+<div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop flex flex-col items-center justify-center text-center">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-md">
+<span class="material-symbols-outlined text-primary text-[32px]">travel_explore</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-sm">Looking for something else?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mb-lg">Explore more items from your campus community. New listings are added every day.</p>
+<a class="inline-flex items-center gap-2 px-8 py-3 bg-primary text-on-primary font-button-text text-button-text rounded-md hover:bg-primary/90 transition-colors shadow-sm hover:shadow-md" href="#">
+        Browse Marketplace
+        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</section>
+</div>
+<script>
+  // Simple interaction script to toggle heart buttons
+  document.querySelectorAll('button[aria-label="Remove from Wishlist"]').forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const icon = button.querySelector('.material-symbols-outlined');
+      // Toggle logic just for visual feedback
+      if(icon.style.fontVariationSettings.includes('1')) {
+         icon.style.fontVariationSettings = "'FILL' 0";
+         button.classList.remove('text-primary');
+         button.classList.add('text-on-surface-variant');
+      } else {
+         icon.style.fontVariationSettings = "'FILL' 1";
+         button.classList.add('text-primary');
+         button.classList.remove('text-on-surface-variant');
+      }
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-low border-t border-outline-variant/30 py-xl mt-xxl"><div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop"><div class="flex flex-col md:flex-row justify-between items-center gap-lg border-b border-outline-variant/20 pb-lg"><div class="font-headline-sm text-headline-sm text-on-surface-variant/70">CampusMart AI</div><nav class="flex flex-wrap justify-center gap-lg"><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary" href="#">About</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary" href="#">Campus Safety</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary" href="#">Terms</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary" href="#">Privacy</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary" href="#">Contact</a></nav></div><div class="pt-lg text-center font-body-sm text-body-sm text-on-surface-variant/50">© 2024 CampusMart AI. Curated for the scholarly.</div></div></footer></body></html>

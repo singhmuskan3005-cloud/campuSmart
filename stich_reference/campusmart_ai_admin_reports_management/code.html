@@ -1,0 +1,375 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={theme:{extend:{"colors":{"on-secondary-fixed-variant":"#574235","surface-container":"#efedeb","tertiary-container":"#a8b5c6","surface-dim":"#dbdad7","inverse-primary":"#bacbbb","tertiary-fixed":"#d7e4f5","on-surface":"#1b1c1b","primary":"#536255","on-primary-fixed":"#101f14","surface-tint":"#536255","surface-bright":"#fbf9f6","primary-fixed":"#d6e7d6","on-error-container":"#93000a","on-primary-fixed-variant":"#3b4a3e","surface-variant":"#e4e2e0","on-error":"#ffffff","on-background":"#1b1c1b","surface-container-lowest":"#ffffff","on-surface-variant":"#434843","on-primary-container":"#3a493d","on-secondary-container":"#776051","surface-container-high":"#eae8e5","background":"#fbf9f6","surface-container-low":"#f5f3f1","on-tertiary-fixed":"#101d29","inverse-surface":"#30302f","outline-variant":"#c3c8c1","secondary-fixed":"#fcdcc9","secondary":"#715a4b","tertiary-fixed-dim":"#bbc8d9","on-tertiary-fixed-variant":"#3b4856","surface":"#fbf9f6","secondary-container":"#fcdcc9","error":"#ba1a1a","on-secondary":"#ffffff","on-primary":"#ffffff","error-container":"#ffdad6","primary-container":"#a7b8a8","on-tertiary-container":"#3a4755","inverse-on-surface":"#f2f0ee","surface-container-highest":"#e4e2e0","outline":"#747873","tertiary":"#53606e","primary-fixed-dim":"#bacbbb","on-tertiary":"#ffffff","on-secondary-fixed":"#28180c"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-mobile":"16px","container-max":"1280px","unit":"4px","margin-desktop":"40px","md":"16px","xs":"4px","gutter":"24px","lg":"24px","xxl":"80px","xl":"48px","sm":"8px"},"fontFamily":{"display-lg":["Playfair Display"],"button-text":["Inter"],"body-lg":["Inter"],"headline-lg":["Playfair Display"],"display-lg-mobile":["Playfair Display"],"body-md":["Inter"],"headline-sm":["Playfair Display"],"body-sm":["Inter"],"headline-md":["Playfair Display"],"label-caps":["Inter"]},"fontSize":{"display-lg":["64px",{"lineHeight":"72px","letterSpacing":"-0.02em","fontWeight":"700"}],"button-text":["14px",{"lineHeight":"20px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-lg":["40px",{"lineHeight":"48px","fontWeight":"600"}],"display-lg-mobile":["40px",{"lineHeight":"48px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["24px",{"lineHeight":"32px","fontWeight":"500"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["32px",{"lineHeight":"40px","fontWeight":"600"}],"label-caps":["12px",{"lineHeight":"16px","letterSpacing":"0.1em","fontWeight":"600"}]}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Playfair+Display:wght@100..900&amp;display=swap" rel="stylesheet"></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col pt-xxl pb-xl shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><div class="px-lg mb-xl"><div class="font-headline-sm text-headline-sm italic text-primary tracking-tight">CampusMart AI</div><div class="mt-xs font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Administrator</div></div><nav class="flex-1 px-sm space-y-xs" data-active-classes="bg-primary-container text-on-primary-container font-medium"><a aria-current="page" class="flex items-center px-lg py-md rounded-xl transition-all group bg-primary-container text-on-primary-container font-medium" data-path="dashboard" href="#"><span class="material-symbols-outlined mr-md">dashboard</span><span class="font-button-text text-button-text">Dashboard</span></a><a class="flex items-center px-lg py-md rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="users" href="#"><span class="material-symbols-outlined mr-md">group</span><span class="font-button-text text-button-text">Users</span></a><a class="flex items-center px-lg py-md rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="listings" href="#"><span class="material-symbols-outlined mr-md">inventory_2</span><span class="font-button-text text-button-text">Listings</span></a><a class="flex items-center px-lg py-md rounded-xl hover:text-on-surface transition-all group bg-primary-container text-on-primary-container font-medium" data-path="reports" href="#"><span class="material-symbols-outlined mr-md">analytics</span><span class="font-button-text text-button-text">Reports</span></a></nav><div class="px-lg pt-lg border-t border-outline-variant/30 text-center"><button class="w-full py-sm bg-primary text-on-primary rounded-lg font-button-text text-button-text hover:bg-primary-container hover:text-on-primary-container transition-colors">Sign Out</button></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/70 backdrop-blur-xl z-40 flex items-center justify-between px-margin-desktop shadow-[0_1px_4px_rgba(0,0,0,0.02)]"><div class="flex items-center gap-md"></div><div class="flex items-center gap-xl"><button class="relative text-on-surface-variant hover:text-on-surface transition-colors p-sm rounded-full hover:bg-surface-container-high"><span class="material-symbols-outlined">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-error rounded-full"></span></button><div class="flex items-center gap-md group cursor-pointer"><div class="text-right hidden sm:block"><div class="font-button-text text-button-text text-on-surface">Admin User</div><div class="font-label-caps text-label-caps text-on-surface-variant">Super Admin</div></div><img alt="Profile" class="w-10 h-10 rounded-full object-cover ring-2 ring-primary-container" src="https://lh3.googleusercontent.com/aida/AEtjO1W1tMyYI0N23719dGrvLmHsxLWemODid7EuZ8PE8r0-rgWC39sZmYcDrL7Eu_NyeLZNmgEph0Yyru4_6msgtIymeyOTUqH1tDLKt6xiPbRbiGpbcZ7Yrc6FKz9hAYsHTPWh2Y1ERIlkbzqJtnh4XValL5uGupKbzCE3x58-7MovQEjQJrYsUyaWeSZnzUuCY8n07chDp7Jvq47zPZPaed-BxUiStcFF2r0FWtaGLGLYfvyp5xc_LG5UDkg"></div></div></header><main class="relative pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full h-full relative" id="reports-app">
+<div class="px-margin-desktop py-xl max-w-container-max mx-auto w-full flex flex-col gap-xl">
+<!-- Page Header -->
+<header class="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-lg pt-lg relative z-10">
+<div class="flex flex-col gap-sm relative">
+<div class="absolute -left-lg top-0 w-1 h-full bg-primary/20 rounded-full"></div>
+<div class="font-label-caps text-label-caps text-on-surface-variant tracking-[0.2em] uppercase pl-sm border-l border-primary/20">Administration</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Reports</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Review reports and help keep the CampusMart community safe.</p>
+</div>
+<div class="flex items-center gap-md">
+<span class="inline-flex items-center px-lg py-sm bg-error-container text-on-error-container rounded-full font-label-caps text-label-caps tracking-widest shadow-sm">
+<span class="w-2 h-2 rounded-full bg-error mr-sm animate-pulse"></span>
+          12 Pending Reports
+        </span>
+</div>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-xl items-start relative z-10">
+<!-- Main Content Area: Filters & Table -->
+<div class="flex flex-col gap-lg min-w-0">
+<!-- Filters -->
+<div class="bg-surface-container-low rounded-xl p-md flex flex-wrap gap-md items-center shadow-sm relative overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+<div class="relative flex-1 min-w-[200px]">
+<span class="material-symbols-outlined absolute left-md top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">search</span>
+<input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant/60 font-body-md border border-outline-variant rounded-lg pl-xl pr-md py-sm focus:outline-none focus:border-primary transition-colors shadow-sm" placeholder="Search reports..." type="text">
+</div>
+<div class="relative min-w-[140px]">
+<select class="w-full appearance-none bg-surface-container-lowest text-on-surface font-button-text border border-outline-variant rounded-lg pl-md pr-xl py-sm focus:outline-none focus:border-primary transition-colors shadow-sm cursor-pointer">
+<option value="all">Status: All</option>
+<option value="pending">Pending</option>
+<option value="review">Under Review</option>
+<option value="resolved">Resolved</option>
+<option value="dismissed">Dismissed</option>
+</select>
+<span class="material-symbols-outlined absolute right-md top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<div class="relative min-w-[160px]">
+<select class="w-full appearance-none bg-surface-container-lowest text-on-surface font-button-text border border-outline-variant rounded-lg pl-md pr-xl py-sm focus:outline-none focus:border-primary transition-colors shadow-sm cursor-pointer">
+<option value="all">Type: All Types</option>
+<option value="listing">Listing</option>
+<option value="user">User</option>
+<option value="conversation">Conversation</option>
+</select>
+<span class="material-symbols-outlined absolute right-md top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Reports Table -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low border-b border-outline-variant text-on-surface-variant font-label-caps text-label-caps tracking-widest uppercase">
+<th class="py-md px-lg font-semibold whitespace-nowrap">Report ID</th>
+<th class="py-md px-lg font-semibold whitespace-nowrap">Type</th>
+<th class="py-md px-lg font-semibold">Subject</th>
+<th class="py-md px-lg font-semibold whitespace-nowrap">Reported By</th>
+<th class="py-md px-lg font-semibold">Reason</th>
+<th class="py-md px-lg font-semibold whitespace-nowrap">Status</th>
+<th class="py-md px-lg font-semibold whitespace-nowrap text-right">Date</th>
+</tr>
+</thead>
+<tbody class="text-body-md text-on-surface divide-y divide-outline-variant/50">
+<!-- Row 1 (Active) -->
+<tr class="hover:bg-surface-container-high transition-colors cursor-pointer bg-primary/5 group" onclick="selectReport(1042)">
+<td class="py-lg px-lg font-button-text whitespace-nowrap group-hover:text-primary transition-colors">#1042</td>
+<td class="py-lg px-lg whitespace-nowrap text-on-surface-variant">Listing</td>
+<td class="py-lg px-lg font-medium truncate max-w-[150px]">Scientific Calculator</td>
+<td class="py-lg px-lg whitespace-nowrap text-on-surface-variant">Priya K.</td>
+<td class="py-lg px-lg truncate max-w-[150px]">Suspicious listing</td>
+<td class="py-lg px-lg whitespace-nowrap">
+<span class="inline-flex items-center px-sm py-xs bg-error-container/30 text-on-error-container rounded-full font-label-caps text-[10px] tracking-wider border border-error-container">Pending</span>
+</td>
+<td class="py-lg px-lg whitespace-nowrap text-right text-on-surface-variant font-button-text text-sm">Today</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-high transition-colors cursor-pointer group" onclick="selectReport(1041)">
+<td class="py-lg px-lg font-button-text whitespace-nowrap group-hover:text-primary transition-colors">#1041</td>
+<td class="py-lg px-lg whitespace-nowrap text-on-surface-variant">User</td>
+<td class="py-lg px-lg font-medium truncate max-w-[150px]">Rohan Mehta</td>
+<td class="py-lg px-lg whitespace-nowrap text-on-surface-variant">Ananya Singh</td>
+<td class="py-lg px-lg truncate max-w-[150px]">Inappropriate behavior</td>
+<td class="py-lg px-lg whitespace-nowrap">
+<span class="inline-flex items-center px-sm py-xs bg-secondary-fixed/50 text-on-secondary-fixed-variant rounded-full font-label-caps text-[10px] tracking-wider border border-secondary-fixed">Under Review</span>
+</td>
+<td class="py-lg px-lg whitespace-nowrap text-right text-on-surface-variant font-button-text text-sm">Today</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-high transition-colors cursor-pointer group" onclick="selectReport(1040)">
+<td class="py-lg px-lg font-button-text whitespace-nowrap group-hover:text-primary transition-colors">#1040</td>
+<td class="py-lg px-lg whitespace-nowrap text-on-surface-variant">Conversation</td>
+<td class="py-lg px-lg font-medium truncate max-w-[150px]">Engineering Math...</td>
+<td class="py-lg px-lg whitespace-nowrap text-on-surface-variant">Aarav Sharma</td>
+<td class="py-lg px-lg truncate max-w-[150px]">Unsafe communication</td>
+<td class="py-lg px-lg whitespace-nowrap">
+<span class="inline-flex items-center px-sm py-xs bg-error-container/30 text-on-error-container rounded-full font-label-caps text-[10px] tracking-wider border border-error-container">Pending</span>
+</td>
+<td class="py-lg px-lg whitespace-nowrap text-right text-on-surface-variant font-button-text text-sm">Yesterday</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-high transition-colors cursor-pointer opacity-70 hover:opacity-100 group" onclick="selectReport(1039)">
+<td class="py-lg px-lg font-button-text whitespace-nowrap group-hover:text-primary transition-colors">#1039</td>
+<td class="py-lg px-lg whitespace-nowrap text-on-surface-variant">Listing</td>
+<td class="py-lg px-lg font-medium truncate max-w-[150px] line-through text-on-surface-variant">Programming in C++</td>
+<td class="py-lg px-lg whitespace-nowrap text-on-surface-variant">Priya K.</td>
+<td class="py-lg px-lg truncate max-w-[150px]">Misleading description</td>
+<td class="py-lg px-lg whitespace-nowrap">
+<span class="inline-flex items-center px-sm py-xs bg-primary-fixed/50 text-on-primary-fixed-variant rounded-full font-label-caps text-[10px] tracking-wider border border-primary-fixed">Resolved</span>
+</td>
+<td class="py-lg px-lg whitespace-nowrap text-right text-on-surface-variant font-button-text text-sm">2 days ago</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-high transition-colors cursor-pointer opacity-70 hover:opacity-100 group" onclick="selectReport(1038)">
+<td class="py-lg px-lg font-button-text whitespace-nowrap group-hover:text-primary transition-colors">#1038</td>
+<td class="py-lg px-lg whitespace-nowrap text-on-surface-variant">Listing</td>
+<td class="py-lg px-lg font-medium truncate max-w-[150px]">Study Lamp</td>
+<td class="py-lg px-lg whitespace-nowrap text-on-surface-variant">Ananya Singh</td>
+<td class="py-lg px-lg truncate max-w-[150px]">Incorrect information</td>
+<td class="py-lg px-lg whitespace-nowrap">
+<span class="inline-flex items-center px-sm py-xs bg-surface-variant text-on-surface-variant rounded-full font-label-caps text-[10px] tracking-wider border border-outline-variant">Dismissed</span>
+</td>
+<td class="py-lg px-lg whitespace-nowrap text-right text-on-surface-variant font-button-text text-sm">3 days ago</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="px-lg py-md border-t border-outline-variant bg-surface-container-low flex items-center justify-between">
+<span class="text-body-sm text-on-surface-variant">Showing 1-5 of 12 reports</span>
+<div class="flex items-center gap-sm">
+<button class="p-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded-lg transition-colors disabled:opacity-50" disabled=""><span class="material-symbols-outlined text-sm">chevron_left</span></button>
+<span class="font-button-text text-sm text-on-surface">Page 1</span>
+<button class="p-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded-lg transition-colors"><span class="material-symbols-outlined text-sm">chevron_right</span></button>
+</div>
+</div>
+</div>
+</div>
+<!-- Detail Panel -->
+<aside class="sticky top-24 bg-surface-container-lowest rounded-xl shadow-md border border-outline-variant flex flex-col h-[calc(100vh-140px)] min-h-[600px] overflow-hidden" id="detail-panel">
+<!-- Panel Header -->
+<div class="px-lg py-md border-b border-outline-variant bg-surface-container-low flex items-center justify-between">
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-sm">
+              #1042
+              <span class="font-label-caps text-label-caps text-on-surface-variant tracking-widest uppercase bg-surface-variant px-sm py-xs rounded">Listing</span>
+</div>
+</div>
+<span class="inline-flex items-center px-sm py-xs bg-error-container/30 text-on-error-container rounded-full font-label-caps text-[10px] tracking-wider border border-error-container shadow-sm">Pending</span>
+</div>
+<!-- Panel Scrollable Content -->
+<div class="flex-1 overflow-y-auto p-lg flex flex-col gap-xl custom-scrollbar relative">
+<!-- Details Grid -->
+<div class="grid grid-cols-2 gap-y-lg gap-x-md">
+<div>
+<div class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest mb-xs">Reported Item</div>
+<div class="font-body-md font-medium text-on-surface">Scientific Calculator</div>
+</div>
+<div>
+<div class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest mb-xs">Reason</div>
+<div class="font-body-md text-on-surface">Suspicious listing</div>
+</div>
+<div>
+<div class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest mb-xs">Reported By</div>
+<div class="font-body-md text-on-surface flex items-center gap-sm">
+<div class="w-6 h-6 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed font-button-text text-xs">PK</div>
+                Priya Kumar
+              </div>
+</div>
+<div>
+<div class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest mb-xs">Seller</div>
+<div class="font-body-md text-on-surface flex items-center gap-sm">
+<div class="w-6 h-6 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed-variant font-button-text text-xs">AS</div>
+                Aarav Sharma
+              </div>
+</div>
+<div class="col-span-2">
+<div class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest mb-xs">Submitted</div>
+<div class="font-body-md text-on-surface">Today, 10:32 AM</div>
+</div>
+</div>
+<div class="w-full h-px bg-outline-variant/50"></div>
+<!-- Description -->
+<div>
+<div class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest mb-sm flex items-center gap-xs">
+<span class="material-symbols-outlined text-[16px]">format_quote</span>
+              Reporter's Description
+            </div>
+<div class="bg-surface-container rounded-lg p-md font-body-md text-on-surface italic border-l-2 border-primary/30 relative">
+<div class="absolute -top-3 -left-2 text-4xl text-outline-variant/30 font-serif leading-none">"</div>
+              The listing appears to contain misleading information about the item's condition. The images look like stock photos rather than the actual item being sold.
+            </div>
+</div>
+<!-- Listing Preview -->
+<div>
+<div class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest mb-sm flex items-center gap-xs">
+<span class="material-symbols-outlined text-[16px]">inventory_2</span>
+              Reported Listing
+            </div>
+<div class="bg-surface-container-low border border-outline-variant rounded-xl overflow-hidden shadow-sm group">
+<div class="relative h-32 overflow-hidden">
+<img alt="Scientific Calculator" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out mix-blend-multiply" src="https://lh3.googleusercontent.com/aida/AEtjO1XCPFhGtcSxdiUpIiMZeol8yzFfruitA9H_oO_cl_grioRIwQ0pAaIqSxnEdlAKSyGPOI0eG8lPEXmXpnzEybg7ZFzBZ2Zfxx_ZFFnp9MigcQu_deCoUNWRPClcEOIofXSXFT5FicWPWCpnFT1z9-QO-frOsKEOdv0KMsRiUo_QbyAJYUiEOVxLc7_ojiL0oXX020rb863cP_P9Q0lk-OZf5mpjJSOyTfAILFcaiko6bnVd8AJ7wXSND3Y">
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<div class="absolute bottom-sm left-md right-md flex justify-between items-end">
+<div class="font-headline-sm text-headline-sm text-on-primary leading-tight drop-shadow-md">₹650</div>
+<span class="px-2 py-1 bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface text-[10px] font-label-caps uppercase tracking-wider rounded">Good Condition</span>
+</div>
+</div>
+<div class="p-md flex flex-col gap-sm">
+<div class="font-body-md font-medium text-on-surface truncate">Scientific Calculator fx-991EX</div>
+<div class="flex items-center justify-between">
+<div class="text-body-sm text-on-surface-variant flex items-center gap-xs">
+<span class="material-symbols-outlined text-[14px]">storefront</span> Aarav Sharma
+                  </div>
+<a class="text-button-text font-button-text text-primary hover:underline underline-offset-2" href="#">View</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Panel Footer Actions -->
+<div class="p-lg border-t border-outline-variant bg-surface-container-low flex flex-col gap-md relative">
+<!-- Primary Actions -->
+<button class="w-full py-md bg-primary text-on-primary rounded-lg font-button-text text-button-text hover:bg-primary-container hover:text-on-primary-container transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-sm group" onclick="toggleReviewState()">
+<span class="material-symbols-outlined group-hover:rotate-12 transition-transform">gavel</span>
+            Start Review
+          </button>
+<div class="flex gap-sm">
+<button class="flex-1 py-sm bg-surface-container-lowest border border-outline-variant text-on-surface rounded-lg font-button-text text-button-text hover:bg-error-container hover:text-on-error-container hover:border-error-container transition-colors flex items-center justify-center gap-xs" onclick="showOverlay('remove-overlay')">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+              Remove Listing
+            </button>
+<button class="flex-1 py-sm bg-surface-container-lowest border border-outline-variant text-on-surface rounded-lg font-button-text text-button-text hover:bg-primary-fixed hover:text-on-primary-fixed-variant hover:border-primary-fixed transition-colors flex items-center justify-center gap-xs" onclick="showOverlay('resolve-overlay')">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+              Resolve
+            </button>
+<button class="flex-1 py-sm bg-surface-container-lowest border border-outline-variant text-on-surface rounded-lg font-button-text text-button-text hover:bg-surface-variant hover:text-on-surface-variant hover:border-outline transition-colors flex items-center justify-center gap-xs" onclick="showOverlay('dismiss-overlay')">
+<span class="material-symbols-outlined text-[18px]">block</span>
+              Dismiss
+            </button>
+</div>
+<!-- Overlays (Hidden by default) -->
+<!-- Resolve Overlay -->
+<div class="absolute inset-0 bg-surface-container-lowest/95 backdrop-blur-sm z-20 flex flex-col items-center justify-center p-lg text-center hidden opacity-0 transition-opacity duration-300" id="resolve-overlay">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-md shadow-inner">
+<span class="material-symbols-outlined text-[32px]">check_circle</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-sm">Resolve Report?</h3>
+<p class="font-body-md text-on-surface-variant mb-lg">This will mark the report as resolved. No action will be taken against the user or listing.</p>
+<div class="w-full flex gap-md">
+<button class="flex-1 py-sm border border-outline-variant text-on-surface-variant rounded-lg font-button-text hover:bg-surface-container-high transition-colors" onclick="hideOverlay('resolve-overlay')">Cancel</button>
+<button class="flex-1 py-sm bg-primary text-on-primary rounded-lg font-button-text hover:bg-primary-container hover:text-on-primary-container transition-colors shadow-sm" onclick="hideOverlay('resolve-overlay')">Confirm Resolve</button>
+</div>
+</div>
+<!-- Dismiss Overlay -->
+<div class="absolute inset-0 bg-surface-container-lowest/95 backdrop-blur-sm z-20 flex flex-col items-center justify-center p-lg text-center hidden opacity-0 transition-opacity duration-300" id="dismiss-overlay">
+<div class="w-16 h-16 rounded-full bg-surface-variant flex items-center justify-center text-on-surface-variant mb-md shadow-inner">
+<span class="material-symbols-outlined text-[32px]">block</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-sm">Dismiss Report?</h3>
+<p class="font-body-md text-on-surface-variant mb-lg">This will close the report as invalid. The reporter will not be notified.</p>
+<div class="w-full flex gap-md">
+<button class="flex-1 py-sm border border-outline-variant text-on-surface-variant rounded-lg font-button-text hover:bg-surface-container-high transition-colors" onclick="hideOverlay('dismiss-overlay')">Cancel</button>
+<button class="flex-1 py-sm bg-surface-variant text-on-surface-variant rounded-lg font-button-text hover:bg-surface-dim hover:text-on-surface transition-colors shadow-sm" onclick="hideOverlay('dismiss-overlay')">Confirm Dismiss</button>
+</div>
+</div>
+<!-- Remove Listing Overlay -->
+<div class="absolute inset-0 bg-surface-container-lowest/95 backdrop-blur-sm z-20 flex flex-col items-center justify-center p-lg text-center hidden opacity-0 transition-opacity duration-300" id="remove-overlay">
+<div class="w-16 h-16 rounded-full bg-error-container flex items-center justify-center text-error mb-md shadow-inner">
+<span class="material-symbols-outlined text-[32px]">warning</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-sm">Remove Listing?</h3>
+<p class="font-body-md text-on-surface-variant mb-lg">This will permanently delete the listing and notify the seller. This action cannot be undone.</p>
+<div class="w-full flex gap-md">
+<button class="flex-1 py-sm border border-outline-variant text-on-surface-variant rounded-lg font-button-text hover:bg-surface-container-high transition-colors" onclick="hideOverlay('remove-overlay')">Cancel</button>
+<button class="flex-1 py-sm bg-error text-on-error rounded-lg font-button-text hover:bg-error-container hover:text-on-error-container transition-colors shadow-sm" onclick="hideOverlay('remove-overlay')">Remove</button>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div>
+<style>
+  /* Custom scrollbar for detail panel to match minimal aesthetic */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--tw-colors-outline-variant);
+    border-radius: 4px;
+  }
+  .custom-scrollbar:hover::-webkit-scrollbar-thumb {
+    background-color: var(--tw-colors-outline);
+  }
+</style>
+<script>
+  // Simple interaction logic for demonstration
+  
+  // Set active nav item (simulated since nav is outside this snippet)
+  document.addEventListener('DOMContentLoaded', () => {
+    const navItems = document.querySelectorAll('nav a');
+    navItems.forEach(item => {
+      if(item.dataset.path === 'reports') {
+        const activeClasses = item.closest('nav').dataset.activeClasses.split(' ');
+        item.classList.add(...activeClasses);
+        item.classList.remove('text-on-surface-variant', 'hover:bg-surface-container-high');
+      }
+    });
+  });
+
+  function selectReport(id) {
+    // In a real app, this would fetch data and update the panel.
+    // Here we just animate the table row to show selection.
+    const rows = document.querySelectorAll('tbody tr');
+    rows.forEach(row => {
+      row.classList.remove('bg-primary/5');
+    });
+    
+    // Find the row containing the ID and highlight it
+    const selectedRow = Array.from(rows).find(row => row.innerText.includes(`#${id}`));
+    if(selectedRow) {
+      selectedRow.classList.add('bg-primary/5');
+    }
+    
+    // Pulse the detail panel to simulate loading new data
+    const panel = document.getElementById('detail-panel');
+    panel.style.opacity = '0.5';
+    setTimeout(() => {
+      panel.style.opacity = '1';
+    }, 200);
+  }
+
+  let isReviewing = false;
+  function toggleReviewState() {
+    const btn = event.currentTarget;
+    isReviewing = !isReviewing;
+    
+    if(isReviewing) {
+      btn.innerHTML = `<span class="material-symbols-outlined animate-spin">sync</span> Reviewing...`;
+      btn.classList.replace('bg-primary', 'bg-secondary-fixed');
+      btn.classList.replace('text-on-primary', 'text-on-secondary-fixed-variant');
+      
+      setTimeout(() => {
+         btn.innerHTML = `<span class="material-symbols-outlined">pending_actions</span> Under Review`;
+      }, 1000);
+    } else {
+      btn.innerHTML = `<span class="material-symbols-outlined">gavel</span> Start Review`;
+      btn.classList.replace('bg-secondary-fixed', 'bg-primary');
+      btn.classList.replace('text-on-secondary-fixed-variant', 'text-on-primary');
+    }
+  }
+
+  function showOverlay(id) {
+    const overlay = document.getElementById(id);
+    overlay.classList.remove('hidden');
+    // small delay to allow display block to apply before opacity transition
+    setTimeout(() => {
+      overlay.classList.remove('opacity-0');
+      overlay.classList.add('opacity-100');
+    }, 10);
+  }
+
+  function hideOverlay(id) {
+    const overlay = document.getElementById(id);
+    overlay.classList.remove('opacity-100');
+    overlay.classList.add('opacity-0');
+    setTimeout(() => {
+      overlay.classList.add('hidden');
+    }, 300); // match duration
+  }
+</script></main></div></body></html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","on-secondary-fixed-variant":"#574235","secondary-container":"#fcdcc9","secondary-fixed-dim":"#dfc1ae","secondary":"#715a4b","on-tertiary-container":"#3a4755","surface-bright":"#fbf9f6","on-error":"#ffffff","tertiary-container":"#a8b5c6","inverse-primary":"#bacbbb","primary":"#536255","primary-fixed-dim":"#bacbbb","surface-container-lowest":"#ffffff","error":"#ba1a1a","secondary-fixed":"#fcdcc9","surface-container-high":"#eae8e5","surface-container":"#efedeb","on-primary":"#ffffff","inverse-surface":"#30302f","tertiary":"#53606e","on-primary-fixed":"#101f14","error-container":"#ffdad6","tertiary-fixed-dim":"#bbc8d9","on-tertiary-fixed":"#101d29","outline-variant":"#c3c8c1","surface-tint":"#536255","surface":"#fbf9f6","background":"#fbf9f6","surface-container-low":"#f5f3f1","on-surface":"#1b1c1b","on-surface-variant":"#434843","on-primary-container":"#3a493d","inverse-on-surface":"#f2f0ee","primary-fixed":"#d6e7d6","surface-variant":"#e4e2e0","on-tertiary-fixed-variant":"#3b4856","surface-container-highest":"#e4e2e0","tertiary-fixed":"#d7e4f5","primary-container":"#a7b8a8","on-background":"#1b1c1b","on-tertiary":"#ffffff","surface-dim":"#dbdad7","outline":"#747873","on-secondary":"#ffffff","on-secondary-fixed":"#28180c","on-secondary-container":"#776051","on-primary-fixed-variant":"#3b4a3e"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"unit":"4px","gutter":"24px","md":"16px","xl":"48px","margin-mobile":"16px","margin-desktop":"40px","sm":"8px","container-max":"1280px","xxl":"80px","xs":"4px","lg":"24px"},"fontFamily":{"body-lg":["Inter"],"headline-lg":["Playfair Display"],"body-sm":["Inter"],"body-md":["Inter"],"headline-sm":["Playfair Display"],"display-lg":["Playfair Display"],"headline-md":["Playfair Display"],"button-text":["Inter"],"label-caps":["Inter"],"display-lg-mobile":["Playfair Display"]},"fontSize":{"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-lg":["40px",{"lineHeight":"48px","fontWeight":"600"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["24px",{"lineHeight":"32px","fontWeight":"500"}],"display-lg":["64px",{"lineHeight":"72px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["32px",{"lineHeight":"40px","fontWeight":"600"}],"button-text":["14px",{"lineHeight":"20px","fontWeight":"600"}],"label-caps":["12px",{"lineHeight":"16px","letterSpacing":"0.1em","fontWeight":"600"}],"display-lg-mobile":["40px",{"lineHeight":"48px","letterSpacing":"-0.01em","fontWeight":"700"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"></head><body class="bg-background font-body-md text-on-background"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><div class="h-16 max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-xl"><a class="font-headline-sm text-headline-sm text-primary tracking-tight" data-path="browse" href="#">CampusMart AI</a><nav class="hidden md:flex items-center gap-lg" data-active-classes="text-primary font-semibold"><a aria-current="page" class="transition-colors text-primary font-semibold" data-path="browse" href="#">Browse</a><a class="font-button-text text-button-text text-on-surface-variant hover:text-on-surface transition-colors" data-path="sell" href="#">Sell</a><a class="font-button-text text-button-text text-on-surface-variant hover:text-on-surface transition-colors" data-path="wishlist" href="#">Wishlist</a><a class="font-button-text text-button-text text-on-surface-variant hover:text-on-surface transition-colors" data-path="messages" href="#">Messages</a></nav></div><div class="flex items-center gap-md"><button class="p-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined">notifications</span></button><a class="w-8 h-8 rounded-full bg-primary flex items-center justify-center transition-transform hover:scale-105" data-path="profile" href="#"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></a></div></div></header><main class="w-full pt-16"><div class="flex flex-col w-full min-h-full">
+<div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop w-full pb-xxl">
+<!-- Breadcrumb -->
+<nav class="py-md text-label-caps font-label-caps text-on-surface-variant/60 flex items-center gap-sm">
+<a class="hover:text-primary transition-colors" href="#">Marketplace</a>
+<span>/</span>
+<a class="hover:text-primary transition-colors" href="#">Textbooks</a>
+<span>/</span>
+<span class="text-on-surface">Engineering Mathematics</span>
+</nav>
+<!-- Product Hero Section -->
+<section class="mt-lg grid grid-cols-1 lg:grid-cols-12 gap-xl items-start">
+<!-- Left Column: Images -->
+<div class="lg:col-span-7 flex flex-col gap-md">
+<div class="w-full aspect-[4/5] md:aspect-square bg-surface-container-low rounded-xl overflow-hidden group">
+<img alt="Engineering Mathematics — 2nd Edition Textbook" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbZ51h_HRexQjgRgxW2dGF-4_SGAwSVD2eIhLDdlocx_8B30vwvGubf-skeXgAY2u3lAj7nKwu73j7GGCjLYz-_ZW-A977iTs9N6H-SqfAF2eFLXkNpiNiibm3z5ZIxcc8Imnd_Q1MxAx9Ymo5jq8h66djMqsI1B83Nx3Rx_Zrab2vqz2W0N3fCr4aRZa-ON2FsfBI6fh1lpngVX5rlxQiq4tED3cxAzCn5lCeQY7EHdVXUoaLD0v_">
+</div>
+<div class="grid grid-cols-3 gap-md">
+<div class="aspect-square bg-surface-container-low rounded-lg overflow-hidden relative cursor-pointer group">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Close up shot of the back cover of an engineering mathematics textbook, showing publisher details and a barcode. Soft natural lighting, placed on a light oak desk. Editorial minimalism style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAsQfOoqu43eMwWHEbLKBu4Apxd500EpzkIBK_pKoamqUA0khklZYB-0NwwMxlUakFPxYpNBKtmgNcXRfXlz7eIlOX9A9NgHXBMIaw6ZmkBHUNZOg7zG5uiQ1GFyInmb-Yph2k0JO5og_eafBFx7SQsA4sTiM0d-JQ0Em6pafXf1-8tm41ZCK8dooWdKyWtSAcEmysldMGT7tTfJiAqn66c8QQFlZKG265XC9O6SAUBVhJSxDlNhhEl')"></div>
+</div>
+<div class="aspect-square bg-surface-container-low rounded-lg overflow-hidden relative cursor-pointer group">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="An open page of an engineering mathematics textbook showing complex equations and clean, legible diagrams. A pencil is casually placed next to it on a beige background. Editorial product photography." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCiOzPmBN6Nk7RadW4_v6RXD58YUHAqp7ZQKBKL9d9rQX3tDv41AFo14kCgDIQjsQeX-DPny1kpY_8fnz79p7cdaMWLhBZ-5hfOhlTXTpHDXXWfAB-4iC7LiAgSlCvrBBOuoGAEcqaPaKx4hFaiqHZySwFNd4gYyNS8nIg5j2NNkEImWfIN61VjleOIEhdO-rY2ZSI0NU4yRWegUQOBplcBNN5yJwy5JCCGkxWrojoNByO9HvOMHz00')"></div>
+</div>
+<div class="aspect-square bg-surface-container-low rounded-lg overflow-hidden relative cursor-pointer group">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="A close up angle showing the spine of an engineering mathematics 2nd edition textbook, highlighting the binding and thickness. Soft, warm morning light." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBD7mp3C0SDtVEbwWDPRMvc4Xbcvq3UYhlu0dsrD63xT67yerS4CkZdiDZHsbZAa9FHinaAU0Ig1vnc9_t_0kvyXJIA--Vdq2aj5tLjmfQE1B1vEWMseS4e8z0j3TnGiinUuj7Xa7eANv_pG7iqF_XRRL8tD90hE14HEUmDdAjpQYIaXbwpxTjXd9XMIvxGPO5Bk5Tm30ntSwp_ce4JW0ml2P9Pl-Ro9_LGDMCcAname-Jd-PRKUq9k')"></div>
+</div>
+</div>
+</div>
+<!-- Right Column: Details & Actions -->
+<div class="lg:col-span-5 flex flex-col gap-xl sticky top-24">
+<!-- Header & Meta -->
+<div class="flex flex-col gap-md">
+<div class="flex items-center gap-sm">
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary font-label-caps text-[10px]">Available</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Listed 2 days ago</span>
+</div>
+<h1 class="text-display-lg-mobile md:text-display-lg font-display-lg text-on-surface leading-tight">Engineering Mathematics — 2nd Edition</h1>
+<div class="text-headline-lg font-headline-lg text-primary tracking-tight">₹450</div>
+<div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-body-md font-body-md text-on-surface-variant border-t border-outline-variant/30 pt-4 mt-2">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">verified</span> Like New</span>
+<span class="text-outline-variant">•</span>
+<span>Textbooks</span>
+<span class="text-outline-variant">•</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">location_on</span> VIT Vellore</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-md mt-4">
+<button class="w-full bg-primary hover:bg-primary/90 text-on-primary font-button-text text-button-text py-4 px-6 rounded-lg transition-colors flex items-center justify-center gap-2 group">
+<span class="material-symbols-outlined group-hover:-rotate-12 transition-transform">chat_bubble</span>
+            Contact Seller
+          </button>
+<button class="w-full bg-transparent border border-outline-variant hover:border-primary/50 text-on-surface font-button-text text-button-text py-4 px-6 rounded-lg transition-all flex items-center justify-center gap-2 group">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-error transition-colors">favorite</span>
+            Save to Wishlist
+          </button>
+</div>
+<!-- Seller Profile -->
+<div class="bg-surface-container-lowest border border-outline-variant/50 rounded-xl p-6 flex items-center justify-between mt-2">
+<div class="flex items-center gap-md">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container font-headline-sm text-headline-sm overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A minimalist, soft-focus portrait of a young male student in a casual setting, suitable for a profile avatar. Warm natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc2twPVt7k4Wz7V2ej590LLo09Kckc9NJHQC8BJeFJxdLWT4DRX1lHk95a188LXqmXUXZ4-vcQAraSdXDnL26vTR-vmC5gBI_3vQu8TsXGro69cGSb5eGEIOCyC-pTCz8FjjGoU_MBJ942ZWkhqH6vr8dXdDvbSLxZHDFV1BCVFR7toIQu8smsulIAe9QItITJz_FNuAViqsv7axscjUgasGVDk6xWLZmvjQxTFAin2JU6YhAm1eWN">
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[18px] text-on-surface">Aarav S.</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">school</span> VIT Vellore Student
+              </span>
+</div>
+</div>
+<button class="w-10 h-10 rounded-full hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Content Split Layout -->
+<section class="mt-xxl grid grid-cols-1 lg:grid-cols-12 gap-xl border-t border-outline-variant/30 pt-xl">
+<!-- Description & Specs -->
+<div class="lg:col-span-7 flex flex-col gap-xl">
+<div>
+<h2 class="text-headline-md font-headline-md text-on-surface mb-md">About this item</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed max-w-prose">
+            Second edition Engineering Mathematics textbook. Lightly used and in very good condition. No major markings, highlights, or torn pages. Binding is perfectly intact. Essential for first and second-year engineering courses.
+          </p>
+</div>
+<div>
+<h2 class="text-headline-md font-headline-md text-on-surface mb-md">Listing Details</h2>
+<ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8 max-w-2xl text-body-md font-body-md">
+<li class="flex flex-col gap-1 border-b border-outline-variant/20 pb-2">
+<span class="text-on-surface-variant text-body-sm">Condition</span>
+<span class="text-on-surface font-medium">Like New</span>
+</li>
+<li class="flex flex-col gap-1 border-b border-outline-variant/20 pb-2">
+<span class="text-on-surface-variant text-body-sm">Category</span>
+<span class="text-on-surface font-medium">Textbooks</span>
+</li>
+<li class="flex flex-col gap-1 border-b border-outline-variant/20 pb-2">
+<span class="text-on-surface-variant text-body-sm">Campus</span>
+<span class="text-on-surface font-medium">VIT Vellore</span>
+</li>
+<li class="flex flex-col gap-1 border-b border-outline-variant/20 pb-2">
+<span class="text-on-surface-variant text-body-sm">Listed</span>
+<span class="text-on-surface font-medium">2 days ago</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Safety & Support -->
+<div class="lg:col-span-5 flex flex-col gap-lg">
+<div class="bg-tertiary-fixed/30 border border-tertiary-fixed-dim/50 rounded-xl p-lg relative overflow-hidden">
+<!-- Decorative shape -->
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-tertiary-container/20 rounded-full blur-2xl"></div>
+<div class="flex items-center gap-sm mb-md relative z-10">
+<span class="material-symbols-outlined text-tertiary text-[24px]">shield</span>
+<h3 class="text-headline-sm text-headline-sm text-on-tertiary-fixed font-semibold">Stay safe on campus</h3>
+</div>
+<ul class="flex flex-col gap-3 text-body-md font-body-md text-on-tertiary-fixed-variant relative z-10">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] mt-0.5 text-tertiary/70">check_circle</span>
+<span>Always meet in public, well-lit campus areas (like the library or student center).</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] mt-0.5 text-tertiary/70">check_circle</span>
+<span>Keep all communications within the CampusMart app.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] mt-0.5 text-tertiary/70">check_circle</span>
+<span>Inspect the item carefully before transferring payment.</span>
+</li>
+</ul>
+</div>
+<div class="flex justify-start">
+<a class="text-body-sm font-body-sm text-on-surface-variant hover:text-error transition-colors flex items-center gap-1 group" href="#">
+<span class="material-symbols-outlined text-[16px]">flag</span>
+<span class="underline underline-offset-4 decoration-outline-variant/50 group-hover:decoration-error/50">Report this listing</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Related Listings -->
+<section class="mt-xxl pt-xl">
+<div class="flex items-center justify-between mb-lg">
+<h2 class="text-headline-md font-headline-md text-on-surface">You might also like</h2>
+<a class="text-button-text font-button-text text-primary hover:text-primary-container transition-colors flex items-center gap-1 group" href="#">
+          View more <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-lg">
+<!-- Card 1 -->
+<a class="group flex flex-col gap-sm" href="#">
+<div class="w-full aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Data Structures and Algorithms textbook sitting on a modern wooden desk with a laptop faintly visible in the background. Editorial lighting, warm tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuATmpFZPZI0cq0ftAyuOotgVorPSnLiTJ_1smxNYods90wdU2X5pqE4fjBFb3VFaXs1-VaztUmEeUVwbubEBtnvZL-SgKnpuCmKSgnC5t6Vnq9nk2gTJr0IeGyJTn-F855I55PnKmA4TnvxpHBEn9U-JtiUHCNnvPNidZgEs7vD2yxGeVlAn9LR_DwTUoxo8iMpUB0Um9BueDe9YzXo95KsiCbChpIfloU_u1xjypYdzReScDj9ijBY')"></div>
+<div class="absolute top-3 left-3 bg-surface/90 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-label-caps tracking-wider text-on-surface uppercase border border-outline-variant/20">Like New</div>
+</div>
+<div class="flex flex-col pt-2">
+<h3 class="text-headline-sm text-[20px] font-headline-sm text-on-surface leading-tight truncate">Data Structures &amp; Algorithms</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">CS Dept • VIT Vellore</p>
+<p class="text-body-lg font-headline-sm font-semibold text-primary mt-2">₹550</p>
+</div>
+</a>
+<!-- Card 2 -->
+<a class="group flex flex-col gap-sm" href="#">
+<div class="w-full aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Digital Logic Design textbook lying flat on a minimalist pastel blue background. Clean, high contrast product photography style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCpfPkt7pgAin1-wM02_sIbIyJOIrc2oK35mYyG018BbjSh2asP1FfjDUgLg7Y5srsvspr45CQhnwy5Zz_3wY3o0KAf2C2-bPlM3tMf9HKDmD6ycZxN10FN4NI0ydtz0wAjtT82Jh9ST1ADWioGGZ2D6iweCmCJpslCp5cKJRSRUZY8qdAKc4tqr_aPu9QbgcAWg3_FRcE7cY8uOGgRGo5KeEF5HhXOgkIUn8eWmXgbsfiezDxP8UiD')"></div>
+</div>
+<div class="flex flex-col pt-2">
+<h3 class="text-headline-sm text-[20px] font-headline-sm text-on-surface leading-tight truncate">Digital Logic Design</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">ECE Dept • VIT Vellore</p>
+<p class="text-body-lg font-headline-sm font-semibold text-primary mt-2">₹400</p>
+</div>
+</a>
+<!-- Card 3 -->
+<a class="group flex flex-col gap-sm" href="#">
+<div class="w-full aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Operating Systems Concepts textbook (the dinosaur book) placed upright on a campus bench with soft sunlight filtering through leaves." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB4fVZxYKFv5XXl81aoV3lO24E6GjJndVYL3F6Zj7ozkqFOmlBOb_judAB47jfoAiiiHAunbXu92rDHBXhfuBvLkOD7oR76fSjsxuVBCCa6SuiJ4bONCPYC-H_SJIx3yF0mSA5OrZMwmYmX-3Qihanis4Ndq8FU9hKibhv4N-9qFJaAXdewsHiCisOUKyO8tTtR4UZzgHgVbqL_8UIGx8UQCOerRXZVRE2ZE-oLovVyy-GeiGRMMJae')"></div>
+<div class="absolute top-3 left-3 bg-surface/90 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-label-caps tracking-wider text-on-surface uppercase border border-outline-variant/20">Good</div>
+</div>
+<div class="flex flex-col pt-2">
+<h3 class="text-headline-sm text-[20px] font-headline-sm text-on-surface leading-tight truncate">Operating Systems</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">CS Dept • VIT Vellore</p>
+<p class="text-body-lg font-headline-sm font-semibold text-primary mt-2">₹600</p>
+</div>
+</a>
+<!-- Card 4 -->
+<a class="group flex flex-col gap-sm" href="#">
+<div class="w-full aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A C++ programming guide book next to a cup of coffee and a notebook on a dark minimalist desk. Moody, modern student aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCPvQ1OOPuFcUav2pGECieWOf47iIXDhhnHg9OJ4p908foIz1vtRmL_XbJ3wZKucfuULVh8WPYIzctOuy6uxlWKEaGI4JuYzkUt-MsWCUaMcKLDsNpz_He2LaPDpX3MaEQNKVfkGdElEawpBA5V_zyCk4qNTHWO97J7jAYirvtu9LKry06-f_vCw6ee4Imddv7NgYgct8igZY6KjEO8YeUgWNN78Lmw6F0BJScy4K-d7Wz6QwEF2KVH')"></div>
+</div>
+<div class="flex flex-col pt-2">
+<h3 class="text-headline-sm text-[20px] font-headline-sm text-on-surface leading-tight truncate">Programming in C++</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">IT Dept • VIT Vellore</p>
+<p class="text-body-lg font-headline-sm font-semibold text-primary mt-2">₹350</p>
+</div>
+</a>
+</div>
+</section>
+</div>
+</div></main><footer class="w-full bg-surface-container-low border-t border-outline-variant/30 py-xl mt-xxl"><div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop"><div class="flex flex-col md:flex-row justify-between items-center gap-lg border-b border-outline-variant/20 pb-lg"><div class="font-headline-sm text-headline-sm text-on-surface-variant/70">CampusMart AI</div><nav class="flex flex-wrap justify-center gap-lg"><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary" href="#">About</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary" href="#">Campus Safety</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary" href="#">Terms</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary" href="#">Privacy</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary" href="#">Contact</a></nav></div><div class="pt-lg text-center font-body-sm text-body-sm text-on-surface-variant/50">© 2024 CampusMart AI. Curated for the scholarly.</div></div></footer></body></html>

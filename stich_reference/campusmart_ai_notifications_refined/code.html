@@ -1,0 +1,138 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={theme:{extend:{"colors":{"surface-bright":"#fbf9f6","secondary":"#715a4b","primary-fixed":"#d6e7d6","on-surface":"#1b1c1b","on-primary":"#ffffff","surface-variant":"#e4e2e0","secondary-container":"#fcdcc9","outline":"#747873","on-error-container":"#93000a","on-tertiary-container":"#3a4755","on-tertiary-fixed":"#101d29","error":"#ba1a1a","primary":"#536255","on-secondary-fixed":"#28180c","on-secondary-fixed-variant":"#574235","surface-dim":"#dbdad7","secondary-fixed-dim":"#dfc1ae","secondary-fixed":"#fcdcc9","background":"#fbf9f6","on-error":"#ffffff","surface-container":"#efedeb","tertiary-fixed-dim":"#bbc8d9","tertiary":"#53606e","on-primary-container":"#3a493d","on-tertiary-fixed-variant":"#3b4843","surface-container-highest":"#e4e2e0","on-primary-fixed":"#101f14","surface-container-high":"#eae8e5","surface-tint":"#536255","surface-container-low":"#f5f3f1","inverse-surface":"#30302f","surface":"#fbf9f6","error-container":"#ffdad6","on-tertiary":"#ffffff","on-secondary-container":"#776051","on-surface-variant":"#434843","surface-container-lowest":"#ffffff","inverse-primary":"#bacbbb","tertiary-fixed":"#d7e4f5","inverse-on-surface":"#f2f0ee","on-primary-fixed-variant":"#3b4a3e","tertiary-container":"#a8b5c6","on-secondary":"#ffffff","primary-fixed-dim":"#bacbbb","primary-container":"#a7b8a8","on-background":"#1b1c1b","outline-variant":"#c3c8c1"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"xxl":"80px","margin-mobile":"16px","sm":"8px","container-max":"1280px","gutter":"24px","unit":"4px","xs":"4px","md":"16px","margin-desktop":"40px","lg":"24px","xl":"48px"},"fontFamily":{"display-lg-mobile":["Playfair Display"],"headline-sm":["Playfair Display"],"button-text":["Inter"],"label-caps":["Inter"],"headline-md":["Playfair Display"],"body-sm":["Inter"],"display-lg":["Playfair Display"],"body-md":["Inter"],"headline-lg":["Playfair Display"],"body-lg":["Inter"]},"fontSize":{"display-lg-mobile":["40px",{"lineHeight":"48px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-sm":["24px",{"lineHeight":"32px","fontWeight":"500"}],"button-text":["14px",{"lineHeight":"20px","fontWeight":"600"}],"label-caps":["12px",{"lineHeight":"16px","letterSpacing":"0.1em","fontWeight":"600"}],"headline-md":["32px",{"lineHeight":"40px","fontWeight":"600"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"display-lg":["64px",{"lineHeight":"72px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["40px",{"lineHeight":"48px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"></head><body class="bg-background font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-20 max-w-container-max mx-auto px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-xl"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">CampusMart</span><nav class="hidden lg:flex items-center gap-lg" data-active-classes="text-primary font-semibold"><a class="text-body-sm font-button-text text-on-surface-variant hover:text-on-surface transition-colors" data-path="browse-listings" href="#">Browse</a><a class="text-body-sm font-button-text text-on-surface-variant hover:text-on-surface transition-colors" data-path="sell-item" href="#">Sell</a><a class="text-body-sm font-button-text text-on-surface-variant hover:text-on-surface transition-colors" data-path="wishlist" href="#">Wishlist</a><a class="text-body-sm font-button-text text-on-surface-variant hover:text-on-surface transition-colors" data-path="messages" href="#">Messages</a></nav></div><div class="flex items-center gap-md"><div class="p-sm rounded-full hover:bg-surface-container-high transition-colors cursor-pointer text-on-surface-variant"><span class="material-symbols-outlined">search</span></div><div class="p-sm rounded-full hover:bg-surface-container-high transition-colors cursor-pointer text-on-surface-variant"><span class="material-symbols-outlined">notifications</span></div><div class="ml-md w-8 h-8 rounded-full bg-primary flex items-center justify-center cursor-pointer"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<section class="max-w-container-max mx-auto w-full px-margin-desktop py-xxl">
+<!-- Page Header & Title -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-xl mb-xxl relative">
+<!-- Decorative element -->
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-primary-fixed-dim/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex flex-col gap-md relative z-10">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-[0.1em]">Stay Updated</span>
+<h1 class="font-display-lg text-display-lg text-on-surface">Notifications</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-sm">Important updates from your campus marketplace.</p>
+</div>
+<button class="font-button-text text-button-text text-primary hover:text-surface-tint transition-colors relative z-10 flex items-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+        Mark all as read
+      </button>
+</div>
+<!-- Main Grid Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-xxl">
+<!-- Left Column: Notifications Feed (8 cols) -->
+<div class="flex flex-col lg:col-span-12">
+<!-- Filters -->
+<div class="flex flex-wrap gap-sm mb-xl">
+<button class="px-md py-sm rounded-full bg-primary-fixed/50 font-label-caps text-label-caps text-on-primary-fixed transition-colors">All</button>
+<button class="px-md py-sm rounded-full bg-surface-container hover:bg-surface-container-high font-label-caps text-label-caps text-on-surface-variant transition-colors">Unread</button>
+<button class="px-md py-sm rounded-full bg-surface-container hover:bg-surface-container-high font-label-caps text-label-caps text-on-surface-variant transition-colors">Messages</button>
+<button class="px-md py-sm rounded-full bg-surface-container hover:bg-surface-container-high font-label-caps text-label-caps text-on-surface-variant transition-colors">Listings</button>
+<button class="px-md py-sm rounded-full bg-surface-container hover:bg-surface-container-high font-label-caps text-label-caps text-on-surface-variant transition-colors">Wishlist</button>
+</div>
+<!-- Notification List Container -->
+<div class="flex flex-col bg-surface-container-lowest shadow-sm rounded-xl overflow-hidden relative">
+<!-- Item 1: Message (Unread) -->
+<div class="flex flex-col sm:flex-row sm:items-center gap-lg p-lg bg-tertiary-fixed/30 hover:bg-tertiary-fixed/40 transition-colors group">
+<div class="flex items-start gap-md flex-1">
+<div class="w-2 h-2 mt-2 rounded-full bg-tertiary shrink-0"></div>
+<div class="w-10 h-10 rounded-full bg-surface-bright shadow-sm flex items-center justify-center shrink-0 text-tertiary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat_bubble</span>
+</div>
+<div class="flex flex-col gap-xs">
+<p class="font-body-md text-body-md text-on-surface font-semibold group-hover:text-tertiary transition-colors">
+                  Aarav S. sent you a message about <span class="italic">Engineering Mathematics — 2nd Edition</span>.
+                </p>
+<span class="font-body-sm text-body-sm text-outline">2 mins ago</span>
+</div>
+</div>
+<button class="sm:ml-auto mt-md sm:mt-0 px-md py-sm bg-surface-bright shadow-sm rounded font-button-text text-button-text text-tertiary hover:bg-surface-container transition-colors shrink-0">
+              View Message
+            </button>
+</div>
+<div class="h-px w-full bg-outline-variant/20"></div>
+<!-- Item 2: Listing Inquiry (Unread) -->
+<div class="flex flex-col sm:flex-row sm:items-center gap-lg p-lg bg-primary-fixed/30 hover:bg-primary-fixed/40 transition-colors group">
+<div class="flex items-start gap-md flex-1">
+<div class="w-2 h-2 mt-2 rounded-full bg-primary shrink-0"></div>
+<div class="w-10 h-10 rounded-full bg-surface-bright shadow-sm flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">storefront</span>
+</div>
+<div class="flex flex-col gap-xs">
+<p class="font-body-md text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors">
+                  Your <span class="italic">Scientific Calculator</span> listing received a new inquiry.
+                </p>
+<span class="font-body-sm text-body-sm text-outline">1 hour ago</span>
+</div>
+</div>
+<button class="sm:ml-auto mt-md sm:mt-0 px-md py-sm bg-surface-bright shadow-sm rounded font-button-text text-button-text text-primary hover:bg-surface-container transition-colors shrink-0">
+              View Listing
+            </button>
+</div>
+<div class="h-px w-full bg-outline-variant/20"></div>
+<!-- Item 3: Listing Approved -->
+<div class="flex flex-col sm:flex-row sm:items-center gap-lg p-lg bg-surface hover:bg-surface-container-low transition-colors group">
+<div class="flex items-start gap-md flex-1">
+<div class="w-2 h-2 mt-2 rounded-full bg-transparent shrink-0"></div>
+<div class="w-10 h-10 rounded-full bg-surface-container shadow-sm flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex flex-col gap-xs">
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">
+                  Your listing <span class="italic">Engineering Mathematics — 2nd Edition</span> has been approved and is now visible on the marketplace.
+                </p>
+<span class="font-body-sm text-body-sm text-outline">Yesterday</span>
+</div>
+</div>
+</div>
+<div class="h-px w-full bg-outline-variant/20"></div>
+<!-- Item 4: Wishlist Update -->
+<div class="flex flex-col sm:flex-row sm:items-center gap-lg p-lg bg-surface hover:bg-surface-container-low transition-colors group">
+<div class="flex items-start gap-md flex-1">
+<div class="w-2 h-2 mt-2 rounded-full bg-transparent shrink-0"></div>
+<div class="w-10 h-10 rounded-full bg-surface-container shadow-sm flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<div class="flex flex-col gap-xs">
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">
+                  An item in your wishlist has been marked as sold.
+                </p>
+<span class="font-body-sm text-body-sm text-outline">Yesterday</span>
+</div>
+</div>
+</div>
+<div class="h-px w-full bg-outline-variant/20"></div>
+<!-- Item 5: Listing Reminder -->
+<div class="flex flex-col sm:flex-row sm:items-center gap-lg p-lg bg-surface hover:bg-surface-container-low transition-colors group">
+<div class="flex items-start gap-md flex-1">
+<div class="w-2 h-2 mt-2 rounded-full bg-transparent shrink-0"></div>
+<div class="w-10 h-10 rounded-full bg-surface-container shadow-sm flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">history</span>
+</div>
+<div class="flex flex-col gap-xs">
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">
+                  Your listing <span class="italic">Programming in C++</span> has been inactive for a while.
+                </p>
+<span class="font-body-sm text-body-sm text-outline">2 days ago</span>
+</div>
+</div>
+</div>
+<div class="h-px w-full bg-outline-variant/20"></div>
+<!-- Item 6: System/Safety -->
+<div class="flex flex-col sm:flex-row sm:items-center gap-lg p-lg bg-surface hover:bg-surface-container-low transition-colors group">
+<div class="flex items-start gap-md flex-1">
+<div class="w-2 h-2 mt-2 rounded-full bg-transparent shrink-0"></div>
+<div class="w-10 h-10 rounded-full bg-surface-container shadow-sm flex items-center justify-center shrink-0 text-on-tertiary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<div class="flex flex-col gap-xs">
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">
+                  Welcome to CampusMart. Keep your campus transactions safe and respectful.
+                </p>
+<span class="font-body-sm text-body-sm text-outline">3 days ago</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Editorial Visuals & Insights (4 cols) -->
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low border-t border-outline-variant/30 py-xxl mt-xxl"><div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-xl"><div class="col-span-1 md:col-span-1"><span class="font-headline-sm text-headline-sm text-primary">CampusMart</span><p class="mt-md text-body-sm text-on-surface-variant">The curated marketplace for students.</p></div><div class="col-span-1 md:col-span-3 flex flex-wrap gap-xl md:justify-end"><div class="flex flex-col gap-sm"><span class="font-label-caps text-label-caps text-outline uppercase">Platform</span><a class="text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">About</a><a class="text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Campus Safety</a></div><div class="flex flex-col gap-sm"><span class="font-label-caps text-label-caps text-outline uppercase">Legal</span><a class="text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Terms</a><a class="text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy</a></div><div class="flex flex-col gap-sm"><span class="font-label-caps text-label-caps text-outline uppercase">Support</span><a class="text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a></div></div></div><div class="max-w-container-max mx-auto px-margin-desktop mt-xl pt-lg border-t border-outline-variant/20 flex justify-between items-center"><p class="text-body-sm text-outline">© 2024 CampusMart. An Editorial Minimalist Experience.</p></div></footer></body></html>

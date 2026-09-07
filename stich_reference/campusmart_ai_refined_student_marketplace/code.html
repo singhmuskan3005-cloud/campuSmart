@@ -1,0 +1,201 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>CampusMart AI - Your Campus Marketplace</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#28180c",
+                        "surface-container-high": "#eae8e5",
+                        "tertiary-fixed": "#d7e4f5",
+                        "surface-dim": "#dbdad7",
+                        "on-background": "#1b1c1b",
+                        "tertiary": "#53606e",
+                        "error": "#ba1a1a",
+                        "secondary": "#715a4b",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#c3c8c1",
+                        "on-tertiary-container": "#3a4755",
+                        "on-surface-variant": "#434843",
+                        "surface-container": "#efedeb",
+                        "surface-bright": "#fbf9f6",
+                        "secondary-container": "#fcdcc9",
+                        "on-primary-container": "#3a493d",
+                        "on-secondary": "#ffffff",
+                        "inverse-primary": "#bacbbb",
+                        "on-primary-fixed": "#101f14",
+                        "surface": "#fbf9f6",
+                        "error-container": "#ffdad6",
+                        "surface-container-low": "#f5f3f1",
+                        "secondary-fixed": "#fcdcc9",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#a7b8a8",
+                        "on-error": "#ffffff",
+                        "outline": "#747873",
+                        "primary-fixed": "#d6e7d6",
+                        "primary-fixed-dim": "#bacbbb",
+                        "surface-variant": "#e4e2e0",
+                        "tertiary-container": "#a8b5c6",
+                        "on-secondary-fixed-variant": "#574235",
+                        "inverse-surface": "#30302f",
+                        "on-primary-fixed-variant": "#3b4a3e",
+                        "background": "#fbf9f6",
+                        "on-tertiary-fixed-variant": "#3b4856",
+                        "on-secondary-container": "#776051",
+                        "primary": "#536255",
+                        "tertiary-fixed-dim": "#bbc8d9",
+                        "surface-container-highest": "#e4e2e0",
+                        "secondary-fixed-dim": "#dfc1ae",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#101d29",
+                        "surface-tint": "#536255",
+                        "on-surface": "#1b1c1b",
+                        "inverse-on-surface": "#f2f0ee"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "md": "16px",
+                        "margin-desktop": "40px",
+                        "gutter": "24px",
+                        "sm": "8px",
+                        "unit": "4px",
+                        "xl": "48px",
+                        "container-max": "1280px",
+                        "xxl": "80px",
+                        "xs": "4px",
+                        "margin-mobile": "16px",
+                        "lg": "24px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Inter"],
+                        "headline-sm": ["Playfair Display"],
+                        "body-lg": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "headline-md": ["Playfair Display"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "button-text": ["Inter"],
+                        "body-md": ["Inter"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "button-text": ["14px", { "lineHeight": "20px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["40px", { "lineHeight": "48px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glow-shadow { box-shadow: 0px 4px 20px rgba(51, 51, 51, 0.05); }
+        .pastel-circle { border-radius: 50%; filter: blur(40px); z-index: -1; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface/70 border-b border-outline-variant/30 fixed top-0 w-full z-50 backdrop-blur-md transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center h-16 px-margin-desktop max-w-container-max mx-auto">
+<div class="font-headline-sm text-headline-sm text-primary tracking-tight">CampusMart</div>
+<div class="hidden md:flex items-center gap-gutter">
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low/50 px-sm py-unit rounded" href="#">Browse</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low/50 px-sm py-unit rounded" href="#">Sell</a>
+</div>
+<div class="flex items-center gap-md">
+<a class="text-on-surface-variant hover:text-primary font-button-text text-button-text transition-colors" href="#">Login</a>
+<a class="bg-primary text-on-primary font-button-text text-button-text px-md py-sm rounded hover:opacity-90 transition-opacity" href="#">Sign Up</a>
+</div>
+</div>
+</nav>
+<main class="flex-grow pt-xxl">
+<!-- Editorial Hero -->
+<section class="relative px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-xxl overflow-hidden">
+<div class="absolute top-10 left-10 w-[300px] h-[300px] bg-secondary-container/50 pastel-circle"></div>
+<div class="absolute bottom-10 right-10 w-[400px] h-[400px] bg-primary-container/30 pastel-circle"></div>
+<div class="grid md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-6 z-10 flex flex-col items-start gap-lg">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-background">Your campus. Your marketplace.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">Students can buy and sell textbooks, electronics, hostel essentials, clothes and everyday items within their campus community.</p>
+<div class="flex gap-md mt-sm">
+<button class="bg-primary text-on-primary font-button-text text-button-text px-lg py-md rounded hover:opacity-90 transition-opacity">Browse Marketplace</button>
+<button class="border border-outline bg-transparent text-on-background font-button-text text-button-text px-lg py-md rounded hover:bg-surface-container-low transition-colors">Sell an Item</button>
+</div>
+</div>
+<div class="md:col-span-6 z-10 relative">
+<div class="relative w-full aspect-[4/5] md:aspect-square bg-surface-container rounded overflow-hidden glow-shadow">
+<img class="w-full h-full object-cover" data-alt="A stylized, editorial product shot of a sleek backpack and headphones on a clean geometric podium. Soft pastel pink and beige lighting creates a calm, premium atmosphere. Minimalist composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHrNZSTs0ovFUKAhbG7MgvJaRItxrJzotE1LcOanWMQgF9O6LOwJbOlJpuorAOO7_g5cOcbcjQ4aFzAzXnIO-I3cpdArqVB4oVpW0_TDFZ7TdgCCs2XFoZ8mcY5DkuU0_y5Q-S-SgoKTPFi93jy5ZODD8Bro694VUNuZB4tPTn7L8aOI_WFHpFw5cInkcdYZWO7gRwVwWBwNDW8Dh6DW8ED9aFf2HZDcFZu_aVSkESuSwfWrWALDMB">
+</div>
+</div>
+</div>
+</section><div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-md border-b border-outline-variant/20 text-center"><div class="flex flex-wrap justify-center gap-lg font-label-caps text-label-caps text-on-surface-variant opacity-70"><span>Textbooks</span><span>·</span><span>Electronics</span><span>·</span><span>Hostel Essentials</span><span>·</span><span>Fashion</span><span>·</span><span>Study Supplies</span><span>·</span><span>Sports</span></div></div>
+<!-- Product Showcase -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-xxl border-t border-outline-variant/30">
+<div class="mb-xl text-center">
+<span class="font-label-caps text-label-caps text-secondary mb-unit block">CURATED ESSENTIALS</span>
+<h2 class="font-headline-lg text-headline-lg text-on-background">Discover Campus Finds</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-7 bg-surface-container-low rounded-lg p-lg border border-outline-variant hover:shadow-sm transition-shadow"><div class="aspect-[4/3] rounded overflow-hidden mb-md"><img alt="Scientific Calculator" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VNV3ZjKUL2Cv0MyBJFlQEpWGeVh03wA4FlzOgXdqRqYPMyUfFZ65gdxyIX_cZbhGlkzKiWK3ulRsndkJL1LfC8s967Bd3yGdOxM6Ha-oFW_o1YnqV_Hbg-OAXlY6Hy2nXgJSvd35ELkWCla9d4Pmmxjs8awS7Dh8KA7LwDltFbTcq2rpQFndIxuuO_tHTSd5qgIPiUVPEQXMxfLyX5FA1LBoiEpNz0HQ1_Wizfq05g43_hIN0jnaMiLdY"></div><div class="flex justify-between items-start mb-sm"><div><h3 class="font-headline-sm text-headline-sm text-on-background">Scientific Calculator</h3><p class="font-body-sm text-body-sm text-on-surface-variant mt-xs">Like New · VIT Vellore</p></div><span class="font-button-text text-button-text text-primary bg-primary-fixed px-sm py-unit rounded-full">₹650</span></div><div class="flex items-center gap-xs opacity-70"><span class="material-symbols-outlined text-[16px]">person</span><span class="text-label-caps">Student Seller</span></div></div>
+<div class="md:col-span-5 flex flex-col gap-gutter">
+<div class="bg-surface-bright rounded-lg p-lg border border-outline-variant flex-grow hover:shadow-sm transition-shadow"><div class="aspect-square rounded overflow-hidden mb-md"><img alt="Hostel Study Lamp &amp; Backpack" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeuw5zXL7UGo6Dp5VjGDS7vDnLX_aKSG3a0Vx-kjBbhsbEhV0_V19iFqOoKDJT2EsNWc8VhPxrD2-1RHik79v-UdQjBTzsE7RdRv733sgGheKB9Ej13TjoXq98W1poe2gjP7wX93L15r0W-Y_EzRl6YzXCrlCd0q2yTIjjZZQDZOGlZgeQyWCghz_UZ73jnbMhyRfYE17cuxVAtRZKz7dDon-EUNEkDvzwX32XdLS57EFTolB1wyDn"></div><div class="flex justify-between items-start mb-sm"><div><h3 class="font-headline-sm text-headline-sm text-on-background">Hostel Study Lamp &amp; Backpack</h3><p class="font-body-sm text-body-sm text-on-surface-variant mt-xs">Gently Used · IIT Delhi</p></div><span class="font-button-text text-button-text text-secondary bg-secondary-fixed px-sm py-unit rounded-full">₹1,200</span></div><div class="flex items-center gap-xs opacity-70"><span class="material-symbols-outlined text-[16px]">person</span><span class="text-label-caps">Student Seller</span></div></div>
+</div>
+</div>
+</section>
+<!-- Why CampusMart -->
+<section class="bg-surface-container-highest/30 py-xxl px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="grid md:grid-cols-2 gap-xl">
+<div class="bg-primary-fixed/30 p-xl rounded-xl border border-outline-variant/50"><span class="material-symbols-outlined text-primary text-4xl mb-md">verified_user</span><h3 class="font-headline-md text-headline-md text-on-primary-fixed mb-sm">Verified Student Community</h3><p class="font-body-md text-body-md text-on-surface-variant">Moderated listings for safer campus transactions.</p></div>
+<div class="bg-secondary-fixed/30 p-xl rounded-xl border border-outline-variant/50"><span class="material-symbols-outlined text-secondary text-4xl mb-md">chat_bubble</span><h3 class="font-headline-md text-headline-md text-on-secondary-fixed-variant mb-sm">Direct Communication</h3><p class="font-body-md text-body-md text-on-surface-variant">Simple, direct student-to-student communication within your campus.</p></div>
+</div>
+</div>
+</section>
+<!-- How it works -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-xxl">
+<div class="text-center mb-xl">
+<h2 class="font-headline-lg text-headline-lg text-on-background">Simple, seamless selling</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-xl"><div class="flex flex-col items-center text-center"><div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-md border border-outline-variant"><span class="material-symbols-outlined text-primary">search</span></div><h4 class="font-button-text text-button-text text-on-background mb-sm">Browse</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Find what you need on campus.</p></div><div class="flex flex-col items-center text-center"><div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-md border border-outline-variant"><span class="material-symbols-outlined text-primary">forum</span></div><h4 class="font-button-text text-button-text text-on-background mb-sm">Connect</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Message sellers securely.</p></div><div class="flex flex-col items-center text-center"><div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-md border border-outline-variant"><span class="material-symbols-outlined text-primary">handshake</span></div><h4 class="font-button-text text-button-text text-on-background mb-sm">Buy or Sell</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Meet up and trade locally.</p></div></div>
+</section>
+<!-- Final CTA -->
+<section class="bg-tertiary-fixed py-xxl px-margin-mobile md:px-margin-desktop mt-xl">
+<div class="max-w-container-max mx-auto text-center"><h2 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-tertiary-container mb-md">Find something useful. Sell what you don't need.</h2><p class="font-body-lg text-body-lg text-on-tertiary-fixed-variant mb-lg max-w-2xl mx-auto">Buy and sell everyday essentials with students on your campus.</p><button class="bg-tertiary text-on-tertiary font-button-text text-button-text px-xl py-md rounded hover:opacity-90 transition-opacity">Browse Marketplace</button></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low w-full py-xl border-t border-outline-variant/20">
+<div class="flex flex-col md:flex-row justify-between items-center gap-md px-margin-desktop max-w-container-max mx-auto">
+<div class="font-headline-sm text-headline-sm text-secondary">CampusMart</div>
+<div class="flex flex-wrap justify-center gap-md font-body-sm text-body-sm">
+<a class="text-on-surface-variant hover:text-primary transition-colors underline underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors underline underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Safety</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors underline underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Terms</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors underline underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Privacy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors underline underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Support</a>
+</div>
+<div class="text-secondary font-body-sm text-body-sm opacity-80 hover:opacity-100 transition-opacity">
+                © 2024 CampusMart. An Editorial Marketplace for Students.
+            </div>
+</div>
+</footer>
+</body></html>

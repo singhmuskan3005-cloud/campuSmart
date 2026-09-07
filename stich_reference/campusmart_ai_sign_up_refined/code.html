@@ -1,0 +1,170 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={theme:{extend:{"colors":{"on-primary-fixed":"#101f14","on-background":"#1b1c1b","on-secondary-fixed-variant":"#574235","error-container":"#ffdad6","outline-variant":"#c3c8c1","surface-dim":"#dbdad7","surface-container-highest":"#e4e2e0","tertiary-fixed-dim":"#bbc8d9","secondary":"#715a4b","surface":"#fbf9f6","outline":"#747873","on-primary-fixed-variant":"#3b4a3e","background":"#fbf9f6","surface-bright":"#fbf9f6","inverse-on-surface":"#f2f0ee","surface-variant":"#e4e2e0","on-secondary":"#ffffff","surface-container-high":"#eae8e5","surface-container":"#efedeb","inverse-primary":"#bacbbb","on-error-container":"#93000a","secondary-fixed":"#fcdcc9","primary":"#536255","on-surface":"#1b1c1b","primary-container":"#a7b8a8","error":"#ba1a1a","on-error":"#ffffff","on-tertiary-fixed-variant":"#3b4856","primary-fixed":"#d6e7d6","primary-fixed-dim":"#bacbbb","on-primary":"#ffffff","on-secondary-fixed":"#28180c","on-primary-container":"#3a493d","on-secondary-container":"#776051","surface-container-lowest":"#ffffff","surface-container-low":"#f5f3f1","on-surface-variant":"#434843","tertiary":"#53606e","inverse-surface":"#30302f","tertiary-fixed":"#d7e4f5","on-tertiary":"#ffffff","secondary-container":"#fcdcc9"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"lg":"24px","xl":"48px","unit":"4px","margin-mobile":"16px","xs":"4px","container-max":"1280px","margin-desktop":"40px","sm":"8px","md":"16px","gutter":"24px","xxl":"80px"},"fontFamily":{"body-md":["Inter"],"body-lg":["Inter"],"headline-lg":["Playfair Display"],"label-caps":["Inter"],"button-text":["Inter"],"headline-md":["Playfair Display"],"display-lg-mobile":["Playfair Display"],"display-lg":["Playfair Display"],"headline-sm":["Playfair Display"],"body-sm":["Inter"]},"fontSize":{"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-lg":["40px",{"lineHeight":"48px","fontWeight":"600"}],"label-caps":["12px",{"lineHeight":"16px","letterSpacing":"0.1em","fontWeight":"600"}],"button-text":["14px",{"lineHeight":"20px","fontWeight":"600"}],"headline-md":["32px",{"lineHeight":"40px","fontWeight":"600"}],"display-lg-mobile":["40px",{"lineHeight":"48px","letterSpacing":"-0.01em","fontWeight":"700"}],"display-lg":["64px",{"lineHeight":"72px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["24px",{"lineHeight":"32px","fontWeight":"500"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}]}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Playfair+Display:wght@100..900&amp;display=swap" rel="stylesheet"></head><body class="bg-background font-body-md text-on-background"><main class="min-h-screen flex flex-col justify-center"><div class="flex flex-col w-full h-full min-h-[calc(100vh-64px)] lg:flex-row bg-background text-on-background relative overflow-hidden">
+<!-- Left Column: Editorial Visual -->
+<div class="hidden lg:flex w-full lg:w-5/12 flex-col p-12 lg:p-xxl bg-surface-container relative">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary-container/20 pointer-events-none"></div>
+<div class="flex-grow flex flex-col justify-center max-w-[480px] relative z-10">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden shadow-lg relative mb-12 transform -rotate-1 hover:rotate-0 transition-transform duration-700 ease-out">
+<img class="w-full h-full object-cover mix-blend-multiply" data-alt="High-end editorial photography of a student's study space. Soft, warm natural sunlight streaming across a wooden desk. Scattered college essentials: a stack of beautifully bound textbooks, a sleek modern laptop, premium over-ear headphones, and a stylish canvas backpack resting on a chair. Color palette includes dusty sage, muted blush, and warm ivory tones. The composition is calm, organized, and inviting, evoking a sophisticated campus life aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXl8I3HkXl3cfHv72Ymz_TO14c5RlGU2VgBhmnodoX8Z-5QEqbBiuxE4X_bYjuaMI83yiTA9X9tkNjF97yoMFI5TsmzYTb5m8yaFIlOMOTplPhx8WzWsgJMoWw005M4dHlgE2KLz3nQ5N8GI-wrOqrtw5oOt0GvVDWtv7bJDJjnGHCwpvFBwg8RB4DrdnG6cEPAwK5z8I8hoaVkwHynQJ43icVwd8aIvHV9M9YtXdqrcocyeuY9id1">
+</div>
+<div class="bg-tertiary-fixed-dim/30 backdrop-blur-md rounded-xl p-8 relative -mt-20 ml-8 shadow-xl transform rotate-1 hover:rotate-0 transition-transform duration-700 ease-out">
+<span class="text-label-caps text-on-tertiary-fixed-variant tracking-widest block mb-4">BUILT FOR STUDENTS</span>
+<p class="font-headline-sm text-on-surface leading-tight mb-2">Your campus community,</p>
+<p class="font-body-md text-on-surface-variant">Buy and sell everyday essentials with students right in your own neighborhood. Curated, safe, and connected.</p>
+</div>
+</div>
+</div>
+<!-- Right Column: Registration Form -->
+<div class="w-full lg:w-7/12 flex flex-col justify-center items-center p-6 sm:p-12 lg:p-xxl relative bg-surface z-20">
+<!-- Decorative subtle grid background -->
+<svg class="absolute inset-0 w-full h-full opacity-[0.03] pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="40" id="grid" patternUnits="userSpaceOnUse" width="40">
+<path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="1"></path>
+</pattern>
+</defs>
+<rect fill="url(#grid)" height="100%" width="100%"></rect>
+</svg>
+<div class="w-full max-w-[480px] relative z-10">
+<!-- Brand Header -->
+<div class="mb-12">
+<div class="flex items-center gap-3 mb-8">
+<div class="w-8 h-8 rounded bg-primary text-on-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[20px]">school</span>
+</div>
+<span class="font-headline-sm tracking-tight text-on-background">CampusMart AI</span>
+</div>
+<span class="text-label-caps text-on-surface-variant tracking-[0.15em] block mb-4 uppercase">JOIN CAMPUSMART</span>
+<h1 class="font-display-lg-mobile lg:font-display-lg text-on-background mb-4">Create your account.</h1>
+<p class="font-body-lg text-on-surface-variant">Join your campus marketplace and start buying and selling with fellow students today.</p>
+</div>
+<!-- Form -->
+<form class="space-y-6" id="signup-form">
+<!-- Name -->
+<div>
+<label class="block font-body-sm text-on-surface-variant mb-2" for="fullName">Full Name</label>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-4 py-3 font-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors" id="fullName" name="fullName" placeholder="Jane Doe" required="" type="text">
+</div>
+</div>
+<!-- Email -->
+<div>
+<label class="block font-body-sm text-on-surface-variant mb-2" for="email">College Email (.edu)</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline-variant">mail</span>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg pl-12 pr-4 py-3 font-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors" id="email" name="email" placeholder="jane.doe@university.edu" required="" type="email">
+</div>
+</div>
+<!-- Campus -->
+<div>
+<label class="block font-body-sm text-on-surface-variant mb-2" for="campus">College / Campus</label>
+<div class="relative">
+<select class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-4 py-3 font-body-md text-on-surface appearance-none focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors" id="campus" name="campus" required="">
+<option disabled="" selected="" value="">Select your campus</option>
+<option value="state">State University Main</option>
+<option value="tech">Tech Institute</option>
+<option value="arts">City Arts College</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-outline-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Password Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-body-sm text-on-surface-variant mb-2" for="password">Password</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-4 py-3 font-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors" id="password" name="password" placeholder="••••••••" required="" type="password">
+</div>
+<div>
+<label class="block font-body-sm text-on-surface-variant mb-2" for="confirmPassword">Confirm Password</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-4 py-3 font-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors" id="confirmPassword" name="confirmPassword" placeholder="••••••••" required="" type="password">
+</div>
+</div>
+<!-- Password Strength Indicator (Interactive) -->
+<div class="pt-2 h-4 flex items-center gap-2">
+<div class="h-1 flex-1 bg-surface-variant rounded-full transition-colors duration-300" id="strength-bar-1"></div>
+<div class="h-1 flex-1 bg-surface-variant rounded-full transition-colors duration-300" id="strength-bar-2"></div>
+<div class="h-1 flex-1 bg-surface-variant rounded-full transition-colors duration-300" id="strength-bar-3"></div>
+<div class="h-1 flex-1 bg-surface-variant rounded-full transition-colors duration-300" id="strength-bar-4"></div>
+</div>
+<!-- Terms -->
+<div class="flex items-start gap-3 mt-4">
+<div class="flex items-center h-5 mt-1">
+<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary bg-surface-container-lowest cursor-pointer" id="terms" name="terms" required="" type="checkbox">
+</div>
+<label class="font-body-sm text-on-surface-variant leading-tight cursor-pointer" for="terms">
+                        I agree to the <a class="text-primary hover:underline underline-offset-2" href="#">Terms of Service</a> and <a class="text-primary hover:underline underline-offset-2" href="#">Privacy Policy</a>.
+                    </label>
+</div>
+<!-- Submit Action -->
+<button class="w-full bg-primary hover:bg-on-primary-fixed-variant text-on-primary font-button-text py-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 mt-8 relative overflow-hidden group" id="submit-btn" type="submit">
+<span class="relative z-10 flex items-center justify-center gap-2">
+                        Create Account
+                        <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</span>
+<div class="absolute inset-0 bg-white/20 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></div>
+</button>
+</form>
+<!-- Footer -->
+<div class="mt-8 text-center">
+<p class="font-body-md text-on-surface-variant">
+                    Already have an account? 
+                    <a class="text-primary font-button-text hover:underline underline-offset-4 decoration-2 decoration-primary-container ml-1" href="#">Sign in</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const passwordInput = document.getElementById('password');
+        const bars = [
+            document.getElementById('strength-bar-1'),
+            document.getElementById('strength-bar-2'),
+            document.getElementById('strength-bar-3'),
+            document.getElementById('strength-bar-4')
+        ];
+
+        passwordInput.addEventListener('input', (e) => {
+            const val = e.target.value;
+            let strength = 0;
+            
+            if (val.length > 5) strength += 1;
+            if (val.length > 8) strength += 1;
+            if (/[A-Z]/.test(val)) strength += 1;
+            if (/[0-9]/.test(val) || /[^A-Za-z0-9]/.test(val)) strength += 1;
+
+            bars.forEach((bar, index) => {
+                bar.className = 'h-1 flex-1 rounded-full transition-colors duration-300 bg-surface-variant'; // Reset
+                if (index < strength) {
+                    if (strength <= 1) bar.classList.replace('bg-surface-variant', 'bg-error');
+                    else if (strength === 2) bar.classList.replace('bg-surface-variant', 'bg-secondary');
+                    else if (strength >= 3) bar.classList.replace('bg-surface-variant', 'bg-primary');
+                }
+            });
+        });
+
+        const form = document.getElementById('signup-form');
+        const submitBtn = document.getElementById('submit-btn');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const originalContent = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<span class="material-symbols-outlined animate-spin">refresh</span> Processing...';
+            submitBtn.classList.add('opacity-80', 'cursor-not-allowed');
+            
+            // Simulate API call
+            setTimeout(() => {
+                submitBtn.innerHTML = '<span class="material-symbols-outlined">check_circle</span> Welcome to CampusMart';
+                submitBtn.classList.remove('bg-primary', 'hover:bg-on-primary-fixed-variant');
+                submitBtn.classList.add('bg-on-primary-fixed', 'text-primary-fixed');
+                
+                setTimeout(() => {
+                    submitBtn.innerHTML = originalContent;
+                    submitBtn.classList.add('bg-primary', 'hover:bg-on-primary-fixed-variant');
+                    submitBtn.classList.remove('bg-on-primary-fixed', 'text-primary-fixed', 'opacity-80', 'cursor-not-allowed');
+                }, 2000);
+            }, 1500);
+        });
+    });
+</script></main></body></html>
