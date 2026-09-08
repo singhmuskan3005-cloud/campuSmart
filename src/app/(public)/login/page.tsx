@@ -19,27 +19,37 @@ export default function LoginPage() {
   const [error, setError] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setError(null);
-    setLoading(true);
+  e.preventDefault();
 
-    try {
-      if (!email || !password) {
-        setError("Please enter both email and password.");
-        setLoading(false);
-        return;
-      }
-      await signIn(email, password, role);
-      if (role === "ADMIN") {
-        router.push("/admin");
-      } else {
-        router.push("/marketplace");
-      }
-    } catch {
-      setError("Incorrect email or password.");
-      setLoading(false);
+  setError(null);
+  setLoading(true);
+
+  try {
+    if (!email || !password) {
+      setError("Please enter both email and password.");
+      return;
     }
-  };
+
+    await signIn(email, password, role);
+
+    if (role === "ADMIN") {
+      router.push("/admin");
+    } else {
+      router.push("/marketplace");
+    }
+  } catch (err) {
+    console.error("LOGIN ERROR:", err);
+
+    const message =
+      err instanceof Error
+        ? err.message
+        : "Login failed.";
+
+    setError(message);
+  } finally {
+    setLoading(false);
+  }
+};
 
   return (
     <div className="min-h-[85vh] flex items-center justify-center px-4 py-12">
