@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { AuthProvider } from "@/lib/auth/auth-context";
 import { ToastProvider } from "@/components/feedback/toast-provider";
+import { AmplifyProvider } from "@/components/providers/amplify-provider";
 
 export const metadata: Metadata = {
   title: {
@@ -31,11 +32,13 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans bg-background text-foreground antialiased min-h-screen flex flex-col">
-        <AuthProvider>
-          <ToastProvider>
-            {children}
-          </ToastProvider>
-        </AuthProvider>
+        <AmplifyProvider>
+  <AuthProvider>
+    <ToastProvider>
+      {children}
+    </ToastProvider>
+  </AuthProvider>
+</AmplifyProvider>
       </body>
     </html>
   );
